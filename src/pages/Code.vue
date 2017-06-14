@@ -50,12 +50,12 @@
 <style lang="scss" scoped>
     .synopses {
         float: left;
-        width: 47%;
-        padding-left: 1rem;
+        width: 50%;
+        padding-left: 25px;
     }
     .right-slide{
         width: 20%;
         float: left;
-        padding-left: 1rem;
+        padding-left: 10px;
     }
 </style>

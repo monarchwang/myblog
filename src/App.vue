@@ -21,7 +21,7 @@
 			</div>
 		</div>
 
-		<div class="main-content content">
+		<div class="main-content content clearfix">
 			<router-view></router-view>
 		</div>
 
