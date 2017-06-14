@@ -54,8 +54,9 @@
 	@import '../assets/css/global.scss';
 	$qrcodeSize: 10rem;
 	.profile {
-		width: 21%;
-		min-width: 20rem;
+		width: 23%;
+		float: left;
+		min-width: 14rem;
 		background-color: #fff;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 		margin: 0 .555555555555556%;
@@ -151,7 +152,7 @@
 				}
 			}
 			.qrcode{
-				position: absolute;
+                position: absolute;
 				bottom:0;
 				right: -$qrcodeSize;
 				width: $qrcodeSize;

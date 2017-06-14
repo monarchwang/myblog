@@ -169,12 +169,11 @@
 	}
 
 	.main-content {
-		width: 80%;
+		width: 85%;
 		margin: 0 auto;
 	}
 
 	.content{
-		height: 800px;
 		padding: 30px 10px 10px;
 	}
 

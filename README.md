@@ -1,6 +1,6 @@
 # myblog
 
-> A Vue.js project
+> 使用vue开发的个人博客网站前端项目
 
 ## Build Setup
 
