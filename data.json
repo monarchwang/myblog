@@ -1,0 +1,1549 @@
+{
+  "account_id_migration_state": 2,
+  "account_info": [
+    {
+      "account_id": "112508604737782228803",
+      "email": "wglcoder@gmail.com",
+      "full_name": "王国良",
+      "gaia": "112508604737782228803",
+      "given_name": "国良",
+      "hd": "NO_HOSTED_DOMAIN",
+      "is_child_account": false,
+      "locale": "zh-CN",
+      "picture_url": "https://lh6.googleusercontent.com/-HNeB6ApGqZ8/AAAAAAAAAAI/AAAAAAAAABA/h82hPj3zRDo/photo.jpg"
+    }
+  ],
+  "account_tracker_service_last_update": "13139850338378869",
+  "autofill": {
+    "last_version_deduped": 55,
+    "profile_use_dates_fixed": true
+  },
+  "bookmark_bar": {
+    "show_on_all_tabs": true
+  },
+  "browser": {
+    "app_window_placement": {
+      "DevToolsApp": {
+        "always_on_top": false,
+        "bottom": 1063,
+        "docked": false,
+        "left": 632,
+        "maximized": false,
+        "right": 1964,
+        "top": 264,
+        "work_area_bottom": 1112,
+        "work_area_left": 0,
+        "work_area_right": 2048,
+        "work_area_top": 0
+      }
+    },
+    "back_shortcut_bubble_shown_count": 2,
+    "clear_data": {
+      "form_data": true,
+      "hosted_apps_data": true,
+      "media_licenses": true,
+      "passwords": false,
+      "time_period": 4
+    },
+    "clear_lso_data_enabled": true,
+    "has_seen_welcome_page": true,
+    "last_clear_browsing_data_time": "13139853852912365",
+    "last_known_google_url": "https://www.google.co.jp/",
+    "pepper_flash_settings_enabled": true,
+    "should_reset_check_default_browser": false,
+    "window_placement": {
+      "bottom": 1252,
+      "docked": false,
+      "left": 300,
+      "maximized": false,
+      "right": 2040,
+      "top": 120,
+      "work_area_bottom": 1112,
+      "work_area_left": 0,
+      "work_area_right": 2048,
+      "work_area_top": 0
+    }
+  },
+  "child_account_status_known": true,
+  "countryid_at_install": 17230,
+  "credentials_enable_service": true,
+  "data_reduction": {
+    "daily_original_length": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "861729227",
+      "18274150",
+      "5923855",
+      "9626245",
+      "174721850",
+      "747700275",
+      "4444752",
+      "42843398",
+      "31764020",
+      "107901550",
+      "228663",
+      "15309102",
+      "166044100",
+      "1804693",
+      "2454814",
+      "5189093",
+      "8122729",
+      "766531821",
+      "261369214",
+      "68436397",
+      "5425714",
+      "20927831",
+      "369055206",
+      "209361250",
+      "3903337",
+      "2099326",
+      "117811836",
+      "45208951",
+      "4211",
+      "29489809",
+      "38556091",
+      "1676",
+      "15597495",
+      "67107577"
+    ],
+    "daily_original_length_application": "62319747",
+    "daily_original_length_unknown": "10513",
+    "daily_original_length_via_data_reduction_proxy": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_original_length_via_data_reduction_proxy_application": "0",
+    "daily_original_length_via_data_reduction_proxy_unknown": "0",
+    "daily_original_length_via_data_reduction_proxy_video": "0",
+    "daily_original_length_video": "0",
+    "daily_original_length_with_data_reduction_proxy_enabled": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_original_length_with_data_reduction_proxy_enabled_application": "0",
+    "daily_original_length_with_data_reduction_proxy_enabled_unknown": "0",
+    "daily_original_length_with_data_reduction_proxy_enabled_video": "0",
+    "daily_received_length": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "861729227",
+      "18274150",
+      "5923855",
+      "9626245",
+      "174721850",
+      "747700275",
+      "4444752",
+      "42843398",
+      "31764020",
+      "107901550",
+      "228663",
+      "15309102",
+      "166044100",
+      "1804693",
+      "2454814",
+      "5189093",
+      "8122729",
+      "766531821",
+      "261369214",
+      "68436397",
+      "5425714",
+      "20927831",
+      "369055206",
+      "209361250",
+      "3903337",
+      "2099326",
+      "117811836",
+      "45208951",
+      "4211",
+      "29489809",
+      "38556091",
+      "1676",
+      "15597495",
+      "67107577"
+    ],
+    "daily_received_length_application": "62319747",
+    "daily_received_length_https_with_data_reduction_proxy_enabled": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_received_length_long_bypass_with_data_reduction_proxy_enabled": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_received_length_short_bypass_with_data_reduction_proxy_enabled": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_received_length_unknown": "10513",
+    "daily_received_length_unknown_with_data_reduction_proxy_enabled": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_received_length_via_data_reduction_proxy": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_received_length_via_data_reduction_proxy_application": "0",
+    "daily_received_length_via_data_reduction_proxy_unknown": "0",
+    "daily_received_length_via_data_reduction_proxy_video": "0",
+    "daily_received_length_video": "0",
+    "daily_received_length_with_data_reduction_proxy_enabled": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "daily_received_length_with_data_reduction_proxy_enabled_application": "0",
+    "daily_received_length_with_data_reduction_proxy_enabled_unknown": "0",
+    "daily_received_length_with_data_reduction_proxy_enabled_video": "0",
+    "last_update_date": "13139769600000000"
+  },
+  "data_reduction_lo_fi": {
+    "load_images_requests_per_session": 0,
+    "load_images_snackbars_shown_per_session": 0,
+    "was_used_this_session": false
+  },
+  "default_apps_install_state": 2,
+  "default_search_provider": {
+    "synced_guid": "B6A602BE-ED19-4205-A43E-5F9BDC30F984"
+  },
+  "devtools": {
+    "adb_key": "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDX+OJKEdXk7N9b0PCDtO4jVudgRFnq/FTpY32Kw7KMjCsCZNbQORzbAAJuVo82lVH95ya9JcxgwAnIXIg5NXdXKFmoi6bTcfWb2Nbos+s5a0dZOMCY/GC2eVWQZFw6JjDZlEYEeKVL1Swgqnmlv44pArzPzAPKObHeRSvgBPSP0UL18VVE7PzaZe8mwA2bQ17c3O1J8etaJipoZX9osJKwvAwYyR8pgIHBiTnVPPAC6hf0D+B2nWEhema6k4cLv65wSRLx657pJG3sECzmLyFLu2Kgz6QeIYNPaXnLhgnfE9t7TKIaE0JQOvtGZD+svh1WzDxqNBCl071G0G+WHOSBAgMBAAECggEBAKC266YU6afGgVww+pn4DPItXFat5n/QMFvRFn4prPeb4vGQGq6uoYNy2VxEe6Qxr+cSmShONW2V2nHIMfLoj5tDQp0C9y0H8656yUo3gQakh16kteXigRGo7vxZQqxe+SEgjo4LPW5V/tV8JrQp/N8V022KsxNMpcjyjnjRFzDhOTgUdiY/86S9qeR0sYCcH7IzXF2zacCpbd6YJrGiX9A9jg3s//otPJ2lp4To5WY48JymVpBqgoICUK914YAyGIKuleUsyfQoq3W2/r1DT5JWhh2mtPJMdVHH4lGDL2apTULFcXpSokY7asALf9ZY67v2kx67/DIXpJZCYo4SMwUCgYEA8JFawJt0i2PtgUIkx+0gMZWMrN63Dik/hpDvpGa3QmBznxqNofCZTyzd16jgXaMc94G34AuNPLxaAvaziZepn6HKvw8Y80uQsv9b4oOsuU0X2L2gkIMOBcskl4KxAmRI3U+V5qg5+ZIpe3dzsAZcBW1bRPmnEzUIo1onsAfU8r8CgYEA5dOd0XXNPWxn8X73vjIi/H2PDO8c531YOF5gSkWKrFhha8sy8vuTPg0JzPX2KwV509YRqn6odwPpXmrW9ilwW1NuC/kGC0HDwI9u9iYh5l80CYbl43sRxUMRNxV14cvTs6WfpQ7WS1C2b4MmYH3Zj3K2YcxNNPdz7yNwurleOL8CgYEA4RPOKikIaKZM/8Pn79pPZbT7Un5qHOjA0+FlJZco3QSrCPBqFVqrxeU/hlgt284R+wy2Afws3+eF/AHfxttMS9uvewTgHjnUH3VF/e+euhyENDhvMuY7R3ZiPRN9E7TKa63bnVxGKdfz0d3YMpgwnq9LVoSSKilTdKqUOWGKfrcCgYAes8VqfPU9FmVQYqjP9LytxEw+6xaOajVF2n28jku3OFtTXiLhSPBjorRDeDw5hRLAVOGpSCBTPeeIIHe1DNYgrSWPXeYLzO5MpByrr25p6x/1gdrmJ8O4+XusQyarUmJmpmKMV04TY6Xrgba3vzg4LJfmurc5szD+qlpd53OJ2wKBgQDMoO062LKRxgxkpPTRp98Kkp38yL649KfVrL8K0qimz075RhQqTdLJ17pbXZFer30IVTatV/z9L5OaF10ktUrraods4do87ctnP1FwLhlI3qYRdRfJq9TyBWBJqCyrp7f+U7PP3tgmCsotHcVftxymP8i5ORPkiIzdPc/ywajjlQ==",
+    "preferences": {
+      "Inspector.drawerSplitViewState": "{\"horizontal\":{\"size\":0,\"showMode\":\"OnlyMain\"}}",
+      "InspectorView.splitViewState": "{\"vertical\":{\"size\":432},\"horizontal\":{\"size\":565}}",
+      "blockedURLs": "[]",
+      "currentDockState": "\"bottom\"",
+      "elementsPanelSplitViewState": "{\"vertical\":{\"size\":459}}",
+      "emulation.deviceModeValue": "{\"device\":\"\",\"orientation\":\"\",\"mode\":\"\"}",
+      "emulation.showDeviceMode": "false",
+      "inspectorVersion": "22",
+      "lastDockState": "\"right\"",
+      "navigator-view-selectedTab": "\"navigator-sources\"",
+      "networkPanelSplitViewState": "{\"vertical\":{\"size\":0}}",
+      "networkPanelSplitViewWaterfall": "{\"vertical\":{\"size\":0}}",
+      "networkResourceTypeFilters": "{\"Stylesheets\":true}",
+      "panel-selectedTab": "\"network\"",
+      "request-info-formData-category-expanded": "true",
+      "request-info-general-category-expanded": "true",
+      "request-info-queryString-category-expanded": "true",
+      "request-info-requestHeaders-category-expanded": "true",
+      "request-info-requestPayload-category-expanded": "true",
+      "request-info-responseHeaders-category-expanded": "false",
+      "resourceViewTab": "\"cookies\"",
+      "resourcesCookiesExpanded": "true",
+      "resourcesLastSelectedItem": "\"cookies://http://192.168.16.1\"",
+      "sourcesPanelNavigatorSplitViewState": "{\"vertical\":{\"size\":0,\"showMode\":\"Both\"}}",
+      "sourcesPanelSplitViewState": "{\"vertical\":{\"size\":0,\"showMode\":\"Both\"},\"horizontal\":{\"size\":0,\"showMode\":\"Both\"}}",
+      "standardEmulatedDeviceList": "[{\"title\":\"Microsoft Lumia 950\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/14.14263\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":4,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"iPhone 4\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":320,\"height\":480},\"horizontal\":{\"width\":480,\"height\":320}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Laptop with HiDPI screen\",\"type\":\"notebook\",\"user-agent\":\"\",\"capabilities\":[],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":900,\"height\":1440},\"horizontal\":{\"width\":1440,\"height\":900}},\"modes\":[{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Laptop with touch\",\"type\":\"notebook\",\"user-agent\":\"\",\"capabilities\":[\"touch\"],\"screen\":{\"device-pixel-ratio\":1,\"vertical\":{\"width\":950,\"height\":1280},\"horizontal\":{\"width\":1280,\"height\":950}},\"modes\":[{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"BlackBerry Z30\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.0.9.2372 Mobile Safari/537.10+\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nexus 4\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":384,\"height\":640},\"horizontal\":{\"width\":640,\"height\":384}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nexus 5\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":3,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":25,\"right\":0,\"bottom\":48},\"image\":\"@url(google-nexus-5-vertical-default-1x.png) 1x, @url(google-nexus-5-vertical-default-2x.png) 2x\"},{\"title\":\"navigation bar\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":80,\"right\":0,\"bottom\":48},\"image\":\"@url(google-nexus-5-vertical-navigation-1x.png) 1x, @url(google-nexus-5-vertical-navigation-2x.png) 2x\"},{\"title\":\"keyboard\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":80,\"right\":0,\"bottom\":312},\"image\":\"@url(google-nexus-5-vertical-keyboard-1x.png) 1x, @url(google-nexus-5-vertical-keyboard-2x.png) 2x\"},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":25,\"right\":42,\"bottom\":0},\"image\":\"@url(google-nexus-5-horizontal-default-1x.png) 1x, @url(google-nexus-5-horizontal-default-2x.png) 2x\"},{\"title\":\"navigation bar\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":80,\"right\":42,\"bottom\":0},\"image\":\"@url(google-nexus-5-horizontal-navigation-1x.png) 1x, @url(google-nexus-5-horizontal-navigation-2x.png) 2x\"},{\"title\":\"keyboard\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":80,\"right\":42,\"bottom\":202},\"image\":\"@url(google-nexus-5-horizontal-keyboard-1x.png) 1x, @url(google-nexus-5-horizontal-keyboard-2x.png) 2x\"}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Galaxy Note II\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; U; Android 4.1; en-us; GT-N7100 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nexus 6\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":3.5,\"vertical\":{\"width\":412,\"height\":732},\"horizontal\":{\"width\":732,\"height\":412}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Galaxy Note 3\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":3,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"LG Optimus L70\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; LGMS323 Build/KOT49I.MS32310c) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":1.25,\"vertical\":{\"width\":384,\"height\":640},\"horizontal\":{\"width\":640,\"height\":384}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nokia N9\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/534.13\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":1,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nokia Lumia 520\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 520)\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":1.5,\"vertical\":{\"width\":320,\"height\":533},\"horizontal\":{\"width\":533,\"height\":320}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Microsoft Lumia 550\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 550) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/14.14263\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":640,\"height\":360},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nexus 7\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 4.3; Nexus 7 Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":600,\"height\":960},\"horizontal\":{\"width\":960,\"height\":600}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Galaxy S III\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; U; Android 4.0; en-us; GT-I9300 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Nexus 10\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 4.3; Nexus 10 Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":800,\"height\":1280},\"horizontal\":{\"width\":1280,\"height\":800}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Kindle Fire HDX\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (Linux; U; en-us; KFAPWI Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.13 Safari/535.19 Silk-Accelerated=true\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":1600,\"height\":2560},\"horizontal\":{\"width\":2560,\"height\":1600}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"iPad Mini\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":768,\"height\":1024},\"horizontal\":{\"width\":1024,\"height\":768}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Blackberry PlayBook\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML like Gecko) Version/7.2.1.0 Safari/536.2+\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":1,\"vertical\":{\"width\":600,\"height\":1024},\"horizontal\":{\"width\":1024,\"height\":600}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Laptop with MDPI screen\",\"type\":\"notebook\",\"user-agent\":\"\",\"capabilities\":[],\"screen\":{\"device-pixel-ratio\":1,\"vertical\":{\"width\":800,\"height\":1280},\"horizontal\":{\"width\":1280,\"height\":800}},\"modes\":[{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":false,\"show\":\"Default\"},{\"title\":\"Galaxy S5\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":3,\"vertical\":{\"width\":360,\"height\":640},\"horizontal\":{\"width\":640,\"height\":360}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"Nexus 5X\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2.625,\"vertical\":{\"width\":412,\"height\":732,\"outline\":{\"insets\":{\"left\":18,\"top\":88,\"right\":22,\"bottom\":98},\"image\":\"@url(Nexus5X-portrait.svg)\"}},\"horizontal\":{\"width\":732,\"height\":412,\"outline\":{\"insets\":{\"left\":88,\"top\":21,\"right\":98,\"bottom\":19},\"image\":\"@url(Nexus5X-landscape.svg)\"}}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":24,\"right\":0,\"bottom\":48},\"image\":\"@url(google-nexus-5x-vertical-default-1x.png) 1x, @url(google-nexus-5x-vertical-default-2x.png) 2x\"},{\"title\":\"navigation bar\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":80,\"right\":0,\"bottom\":48},\"image\":\"@url(google-nexus-5x-vertical-navigation-1x.png) 1x, @url(google-nexus-5x-vertical-navigation-2x.png) 2x\"},{\"title\":\"keyboard\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":80,\"right\":0,\"bottom\":342},\"image\":\"@url(google-nexus-5x-vertical-keyboard-1x.png) 1x, @url(google-nexus-5x-vertical-keyboard-2x.png) 2x\"},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":24,\"right\":48,\"bottom\":0},\"image\":\"@url(google-nexus-5x-horizontal-default-1x.png) 1x, @url(google-nexus-5x-horizontal-default-2x.png) 2x\"},{\"title\":\"navigation bar\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":80,\"right\":48,\"bottom\":0},\"image\":\"@url(google-nexus-5x-horizontal-navigation-1x.png) 1x, @url(google-nexus-5x-horizontal-navigation-2x.png) 2x\"},{\"title\":\"keyboard\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":80,\"right\":48,\"bottom\":222},\"image\":\"@url(google-nexus-5x-horizontal-keyboard-1x.png) 1x, @url(google-nexus-5x-horizontal-keyboard-2x.png) 2x\"}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"Nexus 6P\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":3.5,\"vertical\":{\"width\":412,\"height\":732,\"outline\":{\"insets\":{\"left\":16,\"top\":94,\"right\":16,\"bottom\":88},\"image\":\"@url(Nexus6P-portrait.svg)\"}},\"horizontal\":{\"width\":732,\"height\":412,\"outline\":{\"insets\":{\"left\":94,\"top\":17,\"right\":88,\"bottom\":17},\"image\":\"@url(Nexus6P-landscape.svg)\"}}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"iPhone 5\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":320,\"height\":568,\"outline\":{\"insets\":{\"left\":29,\"top\":105,\"right\":25,\"bottom\":111},\"image\":\"@url(iPhone5-portrait.svg)\"}},\"horizontal\":{\"width\":568,\"height\":320,\"outline\":{\"insets\":{\"left\":115,\"top\":25,\"right\":115,\"bottom\":28},\"image\":\"@url(iPhone5-landscape.svg)\"}}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"iPhone 6\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":375,\"height\":667,\"outline\":{\"insets\":{\"left\":28,\"top\":105,\"right\":28,\"bottom\":105},\"image\":\"@url(iPhone6-portrait.svg)\"}},\"horizontal\":{\"width\":667,\"height\":375,\"outline\":{\"insets\":{\"left\":106,\"top\":28,\"right\":106,\"bottom\":28},\"image\":\"@url(iPhone6-landscape.svg)\"}}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"iPhone 6 Plus\",\"type\":\"phone\",\"user-agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":3,\"vertical\":{\"width\":414,\"height\":736,\"outline\":{\"insets\":{\"left\":26,\"top\":107,\"right\":30,\"bottom\":111},\"image\":\"@url(iPhone6Plus-portrait.svg)\"}},\"horizontal\":{\"width\":736,\"height\":414,\"outline\":{\"insets\":{\"left\":109,\"top\":29,\"right\":109,\"bottom\":27},\"image\":\"@url(iPhone6Plus-landscape.svg)\"}}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"iPad\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":768,\"height\":1024,\"outline\":{\"insets\":{\"left\":52,\"top\":114,\"right\":55,\"bottom\":114},\"image\":\"@url(iPad-portrait.svg)\"}},\"horizontal\":{\"width\":1024,\"height\":768,\"outline\":{\"insets\":{\"left\":112,\"top\":56,\"right\":116,\"bottom\":52},\"image\":\"@url(iPad-landscape.svg)\"}}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"},{\"title\":\"iPad Pro\",\"type\":\"tablet\",\"user-agent\":\"Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1\",\"capabilities\":[\"touch\",\"mobile\"],\"screen\":{\"device-pixel-ratio\":2,\"vertical\":{\"width\":1024,\"height\":1366},\"horizontal\":{\"width\":1366,\"height\":1024}},\"modes\":[{\"title\":\"default\",\"orientation\":\"vertical\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}},{\"title\":\"default\",\"orientation\":\"horizontal\",\"insets\":{\"left\":0,\"top\":0,\"right\":0,\"bottom\":0}}],\"show-by-default\":true,\"show\":\"Default\"}]"
+    }
+  },
+  "distribution": {
+    "make_chrome_default_for_user": true
+  },
+  "dns_prefetching": {
+    "host_referral_list": [
+      2,
+      [
+        "http://localhost:8080/",
+        [
+          "http://localhost:8080/",
+          5.399999999999999,
+          "http://olnz6wvmk.bkt.clouddn.com/",
+          2.6799999999999997
+        ]
+      ]
+    ],
+    "startup_list": [
+      1,
+      "http://www.google-analytics.com/",
+      "https://app.yinxiang.com/",
+      "https://fex.bdstatic.com/",
+      "https://gss0.bdstatic.com/",
+      "https://gss1.bdstatic.com/",
+      "https://gss2.bdstatic.com/",
+      "https://ssl.google-analytics.com/",
+      "https://stats.g.doubleclick.net/"
+    ]
+  },
+  "download": {
+    "directory_upgrade": true
+  },
+  "extensions": {
+    "alerts": {
+      "initialized": true
+    },
+    "autoupdate": {
+      "last_check": "13139845554838987",
+      "next_check": "13139861969028718"
+    },
+    "chrome_url_overrides": {
+      "bookmarks": [
+        {
+          "active": true,
+          "entry": "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html"
+        }
+      ],
+      "newtab": [
+        {
+          "active": true,
+          "entry": "chrome-extension://dbfmnekepjoapopniengjbcpnbljalfg/index.html"
+        }
+      ]
+    },
+    "commands": {},
+    "install_signature": {
+      "expire_date": "2017-07-19",
+      "ids": [
+        "dbfmnekepjoapopniengjbcpnbljalfg",
+        "dogkpdfcklifaemcdfbildhcofnopogp",
+        "fmkadmapgofadopljbjfkapdkoienihi",
+        "fngmhnnpilhplaeedifhccceomclgfbg",
+        "gighmmpiobklfepjocnamgkkbiglidom",
+        "hmhgeddbohgjknpmjagkdomcpobmllji",
+        "ighdmehidhipcmcojjgiloacoafjmpfk",
+        "nhdogjmejiglipccpnnnanhbledajbpd",
+        "pioclpoplcdbaefihamjohnefbikjilc",
+        "pkedcjkdefgpdelpbcmbmeomcjbeemfm",
+        "pkgccpejnmalmdinmhkkfafefagiiiad"
+      ],
+      "invalid_ids": [],
+      "salt": "wxgT81TzLPYRoToA2Ln1sT8xKkSwfihFOIGkEc90z/k=",
+      "signature": "T45JHQTsWLPXI9eTih3976KX8QcIiUgX1iH73sPpAdYb6Mo39Q8D2h0feAo3LomhIepm+jx44SJIdUiWCZb+U2TmJrhmu5BfpmPZw33FqDuAywSXzVO39NB1fnQgDb84o7C3ghhq8VqK93vyvHzxVesH6sL3WgBe7xf7H8YV1BO4qwV33zhqTI265fHPeeiY6fWL/qRCs7FyBv9nPSobCnGzU05ZjkwRW/el5DfDf023pfG4ym6dSIT5TRA5SR549ZO8a9OPDIMm3uqV8tOXeobuDhGDyBaiUMcJm6b85VlANN70sxgSP8ltWMFI5pMIFKmkiNRFxqAbMepD+tq8BA==",
+      "signature_format_version": 2,
+      "timestamp": "13137685730185187"
+    },
+    "last_chrome_version": "57.0.2987.133",
+    "toolbar": [
+      "hmhgeddbohgjknpmjagkdomcpobmllji",
+      "pioclpoplcdbaefihamjohnefbikjilc",
+      "pkgccpejnmalmdinmhkkfafefagiiiad",
+      "fmkadmapgofadopljbjfkapdkoienihi",
+      "lifbcibllhkdhoafpjfnlhfpfgnpldfl",
+      "ighdmehidhipcmcojjgiloacoafjmpfk",
+      "nhdogjmejiglipccpnnnanhbledajbpd",
+      "gighmmpiobklfepjocnamgkkbiglidom",
+      "fngmhnnpilhplaeedifhccceomclgfbg",
+      "dogkpdfcklifaemcdfbildhcofnopogp",
+      "dbfmnekepjoapopniengjbcpnbljalfg"
+    ],
+    "toolbarsize": 6
+  },
+  "gaia_cookie": {
+    "changed_time": 1493129594.533919,
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "periodic_report_time": 1494854829.28088
+  },
+  "gcm": {
+    "check_time": "13139250069600328",
+    "product_category_for_subtypes": "com.chrome.windows"
+  },
+  "google": {
+    "services": {
+      "hosted_domain": "NO_HOSTED_DOMAIN",
+      "signin": {
+        "AUTHENTICATION_RESULT_RECEIVED": {
+          "time": "Successful",
+          "value": "2017/4/18 下午7:16:29"
+        },
+        "REFRESH_TOKEN_RECEIVED": {
+          "time": "Successful",
+          "value": "2017/4/18 下午7:16:30"
+        },
+        "SIGNIN_COMPLETED": {
+          "time": "Successful",
+          "value": "2017/4/18 下午7:16:30"
+        },
+        "SIGNIN_STARTED": {
+          "time": "With refresh token",
+          "value": "2017/4/18 下午7:16:30"
+        }
+      },
+      "signin_scoped_device_id": "f3d6290d-2021-443a-9f6a-809244f29f96",
+      "user_account_id": "112508604737782228803"
+    }
+  },
+  "hotword": {
+    "audio_logging_enabled": false
+  },
+  "http_original_content_length": "4224970258",
+  "http_received_content_length": "4224970258",
+  "intl": {
+    "accept_languages": "zh-CN,zh"
+  },
+  "invalidator": {
+    "client_id": "A/d8yOAusm/xEcriDpYWAg==",
+    "invalidation_state": "CicKJQoGCgQIAxABEhIJkVw9ffo+GrwRqU1pV0hS8aYaBwiGGBADGAESFDsDAHMw/eEk5gx5uiNah7WbZwkB",
+    "saved_invalidations": [
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "APP",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY0j9pEu3AhCchdLax4evkyEYMw==",
+            "version": "1493135570212000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "APP",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H7Mcigi/FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494389026391000"
+          }
+        ],
+        "name": "APP",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "APP_SETTING",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "AUTOFILL",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H9MoHMC+FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494313085788000"
+          }
+        ],
+        "name": "AUTOFILL",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "AUTOFILL_PROFILE",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "AUTOFILL_WALLET",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "BOOKMARK",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvYxiqol23AhDSsOr5+OvwkqcBGDM=",
+            "version": "1493286496086000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "BOOKMARK",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvYxy7QKS3AhDSsOr5+OvwkqcBGDM=",
+            "version": "1493878874934000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "BOOKMARK",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H0N/LHO/FRCchdLax4evkyEYMw==",
+            "version": "1494500836760000"
+          }
+        ],
+        "name": "BOOKMARK",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "DEVICE_INFO",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY454khy3AhDSsOr5+OvwkqcBGDM=",
+            "version": "1492740701628000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "DEVICE_INFO",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohMUibE0wN0ByvuFkI23AhDSsOr5+OvwkqcBGDM=",
+            "version": "1493688560155000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "DEVICE_INFO",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohOgSIylAe4OUP6h81K/FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494467057077000"
+          }
+        ],
+        "name": "DEVICE_INFO",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "DICTIONARY",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "EXPERIMENTS",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "EXTENSION",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6HyOb6X++FRCchdLax4evkyEYMw==",
+            "version": "1494245759194000"
+          }
+        ],
+        "name": "EXTENSION",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "EXTENSION_SETTING",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "FAVICON_IMAGE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohMUibE0wN0Bysdpnly3AhDSsOr5+OvwkqcBGDM=",
+            "version": "1493277961811000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "FAVICON_IMAGE",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H0N/LHO/FRCchdLax4evkyEYMw==",
+            "version": "1494500836760000"
+          }
+        ],
+        "name": "FAVICON_IMAGE",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "FAVICON_TRACKING",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H/MJ34O9FRDSsOr5+OvwkqcBGDM=",
+            "version": "1493981476210000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "FAVICON_TRACKING",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H0N/LHO/FRCchdLax4evkyEYMw==",
+            "version": "1494500836760000"
+          }
+        ],
+        "name": "FAVICON_TRACKING",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "HISTORY_DELETE_DIRECTIVE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY5jJgP+2AhDSsOr5+OvwkqcBGDM=",
+            "version": "1492496859263000"
+          }
+        ],
+        "name": "HISTORY_DELETE_DIRECTIVE",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "MANAGED_USER",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "MANAGED_USER_SHARED_SETTING",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "NIGORI",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PASSWORD",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY3YHgw63AhCchdLax4evkyEYMw==",
+            "version": "1492622757216000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PASSWORD",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohOgSIylAe4OUE6MSEa9FRDSsOr5+OvwkqcBGDM=",
+            "version": "1493916905129000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PASSWORD",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6HyOaZmK/FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494483253245000"
+          }
+        ],
+        "name": "PASSWORD",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PREFERENCE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvYw5Dosu2AhDSsOr5+OvwkqcBGDM=",
+            "version": "1492061752238000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PREFERENCE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY9A3ZVy3AhDSsOr5+OvwkqcBGDM=",
+            "version": "1493276089036000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PREFERENCE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY5ZDfXK3AhCchdLax4evkyEYMw==",
+            "version": "1493461433927000"
+          }
+        ],
+        "name": "PREFERENCE",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "PRIORITY_PREFERENCE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohMuV5ovW+G6OU6YT8C1AhCE7Yv1x6WevAIYMw==",
+            "version": "1489819284005000"
+          }
+        ],
+        "name": "PRIORITY_PREFERENCE",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "SEARCH_ENGINE",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY5L2PA23AhCchdLax4evkyEYMw==",
+            "version": "1492612067214000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "SEARCH_ENGINE",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohOgSIylAe4OUG4rxG2/FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494495170234000"
+          }
+        ],
+        "name": "SEARCH_ENGINE",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "SESSION",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohOgSIylAe4OUJ5cPzy9FRDSsOr5+OvwkqcBGDM=",
+            "version": "1493906376366000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "SESSION",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6HwOz1oO9FRDSsOr5+OvwkqcBGDM=",
+            "version": "1493981444013000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "SESSION",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohOgSIylAe4OUK5UqW6/FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494496114884000"
+          }
+        ],
+        "name": "SESSION",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "THEME",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "TYPED_URL",
+              "source": 1004
+            },
+            "payload": "W:ChciMBPX0PkdohN6RVYBaEjvY8Zacly3AhDSsOr5+OvwkqcBGDM=",
+            "version": "1493276521198000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "TYPED_URL",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohOgSIylAe4OUA6VvkS9FRDSsOr5+OvwkqcBGDM=",
+            "version": "1493915288514000"
+          },
+          {
+            "isUnknownVersion": false,
+            "objectId": {
+              "name": "TYPED_URL",
+              "source": 1004
+            },
+            "payload": "W:ChcjMBPX0PkdohPQK7IKQEN6H5NDBmy/FRDSsOr5+OvwkqcBGDM=",
+            "version": "1494493348535000"
+          }
+        ],
+        "name": "TYPED_URL",
+        "source": "1004"
+      },
+      {
+        "invalidation-list": [],
+        "name": "WALLET_METADATA",
+        "source": "1004"
+      }
+    ]
+  },
+  "language_model_counters": {
+    "zh-CN": 3
+  },
+  "language_profile": {
+    "reading": {
+      "confidence": 1.0,
+      "preference": [
+        {
+          "language": "zh",
+          "probability": 0.5951258
+        },
+        {
+          "language": "en",
+          "probability": 0.40487424
+        }
+      ]
+    }
+  },
+  "media": {
+    "device_id_salt": "YEBUmjDZlUb4iuM5QqgHQw=="
+  },
+  "media_router": {
+    "cloudservices": {
+      "enabled": true,
+      "prefset": true
+    },
+    "firstrunflow": {
+      "acknowledged": true
+    }
+  },
+  "net": {
+    "http_server_properties": {
+      "servers": [
+        {
+          "https://stats.g.doubleclick.net": {
+            "supports_spdy": true
+          }
+        },
+        {
+          "https://www.google-analytics.com": {
+            "supports_spdy": true
+          }
+        },
+        {
+          "https://ssl.google-analytics.com": {
+            "supports_spdy": true
+          }
+        },
+        {
+          "https://beacons.gcp.gvt2.com": {
+            "supports_spdy": true
+          }
+        }
+      ],
+      "version": 5
+    },
+    "network_qualities": {}
+  },
+  "ntp": {
+    "app_page_names": [
+      "应用"
+    ],
+    "collapsed_foreign_sessions": {}
+  },
+  "partition": {
+    "per_host_zoom_levels": {
+      "2690781855": {}
+    }
+  },
+  "plugins": {
+    "plugins_list": []
+  },
+  "printing": {
+    "print_preview_sticky_settings": {
+      "appState": "{\"version\":2,\"isGcpPromoDismissed\":false,\"recentDestinations\":[{\"id\":\"Microsoft Print to PDF\",\"origin\":\"local\",\"account\":\"\",\"capabilities\":{\"printer\":{\"color\":{\"option\":[{\"is_default\":true,\"type\":\"STANDARD_COLOR\",\"vendor_id\":\"2\"},{\"type\":\"STANDARD_MONOCHROME\",\"vendor_id\":\"1\"}]},\"dpi\":{\"option\":[{\"horizontal_dpi\":600,\"is_default\":true,\"vertical_dpi\":600}]},\"media_size\":{\"option\":[{\"custom_display_name\":\"信纸\",\"height_microns\":279400,\"name\":\"NA_LETTER\",\"vendor_id\":\"1\",\"width_microns\":215900},{\"custom_display_name\":\"Tabloid\",\"height_microns\":431800,\"name\":\"NA_LEDGER\",\"vendor_id\":\"3\",\"width_microns\":279400},{\"custom_display_name\":\"法律专用纸\",\"height_microns\":355600,\"name\":\"NA_LEGAL\",\"vendor_id\":\"5\",\"width_microns\":215900},{\"custom_display_name\":\"Statement\",\"height_microns\":215900,\"name\":\"NA_INVOICE\",\"vendor_id\":\"6\",\"width_microns\":139700},{\"custom_display_name\":\"Executive\",\"height_microns\":266700,\"name\":\"NA_EXECUTIVE\",\"vendor_id\":\"7\",\"width_microns\":184100},{\"custom_display_name\":\"A3\",\"height_microns\":420000,\"name\":\"ISO_A3\",\"vendor_id\":\"8\",\"width_microns\":297000},{\"custom_display_name\":\"A4\",\"height_microns\":297000,\"is_default\":true,\"name\":\"ISO_A4\",\"vendor_id\":\"9\",\"width_microns\":210000},{\"custom_display_name\":\"A5\",\"height_microns\":210000,\"name\":\"ISO_A5\",\"vendor_id\":\"11\",\"width_microns\":148000},{\"custom_display_name\":\"B4 (JIS)\",\"height_microns\":364000,\"name\":\"JIS_B4\",\"vendor_id\":\"12\",\"width_microns\":257000},{\"custom_display_name\":\"B5 (JIS)\",\"height_microns\":257000,\"name\":\"JIS_B5\",\"vendor_id\":\"13\",\"width_microns\":182000}]},\"page_orientation\":{\"option\":[{\"is_default\":true,\"type\":\"PORTRAIT\"},{\"type\":\"LANDSCAPE\"},{\"type\":\"AUTO\"}]},\"supported_content_type\":[{\"content_type\":\"application/pdf\"}]},\"version\":\"1.0\"},\"name\":\"\",\"extensionId\":\"\",\"extensionName\":\"\"}],\"mediaSize\":{\"custom_display_name\":\"A4\",\"height_microns\":297000,\"is_default\":true,\"name\":\"ISO_A4\",\"vendor_id\":\"9\",\"width_microns\":210000}}"
+    }
+  },
+  "profile": {
+    "avatar_index": 24,
+    "content_settings": {
+      "domain_to_origin_migration_status": 2,
+      "exceptions": {
+        "app_banner": {},
+        "auto_select_certificate": {},
+        "automatic_downloads": {},
+        "autoplay": {},
+        "background_sync": {},
+        "bluetooth_guard": {},
+        "cookies": {},
+        "durable_storage": {},
+        "fullscreen": {},
+        "geolocation": {
+          "chrome-extension://dbfmnekepjoapopniengjbcpnbljalfg/,chrome-extension://dbfmnekepjoapopniengjbcpnbljalfg/": {
+            "last_used": 1495283260.850745
+          }
+        },
+        "images": {},
+        "important_site_info": {},
+        "javascript": {},
+        "media_stream_camera": {},
+        "media_stream_mic": {},
+        "midi_sysex": {},
+        "mixed_script": {},
+        "mouselock": {},
+        "notifications": {},
+        "plugins": {
+          "http://product.dangdang.com:80,*": {
+            "setting": 1
+          },
+          "http://search.dangdang.com:80,*": {
+            "setting": 1
+          },
+          "http://v.youku.com:80,*": {
+            "setting": 1
+          },
+          "http://www.bilibili.com:80,*": {
+            "setting": 1
+          },
+          "http://www.jq22.com:80,*": {
+            "setting": 1
+          },
+          "https://user.qzone.qq.com:443,*": {
+            "setting": 1
+          }
+        },
+        "popups": {},
+        "ppapi_broker": {},
+        "prompt_no_decision_count": {},
+        "protocol_handler": {},
+        "ssl_cert_decisions": {},
+        "usb_chooser_data": {}
+      },
+      "pref_version": 1
+    },
+    "exit_type": "Crashed",
+    "exited_cleanly": true,
+    "gaia_info_picture_url": "https://lh6.googleusercontent.com/-HNeB6ApGqZ8/AAAAAAAAAAI/AAAAAAAAABA/h82hPj3zRDo/s256-c/photo.jpg",
+    "gaia_info_update_time": "13139841302018639",
+    "icon_version": 4,
+    "last_engagement_time": "13139853895461437",
+    "managed_user_id": "",
+    "managed_users": {},
+    "name": "liang",
+    "password_manager_enabled": true,
+    "using_default_avatar": false,
+    "using_default_name": false,
+    "using_gaia_avatar": false
+  },
+  "protection": {
+    "macs": {}
+  },
+  "reverse_autologin": {
+    "enabled": false
+  },
+  "savefile": {
+    "default_directory": "C:\\Users\\liang\\Downloads"
+  },
+  "selectfile": {
+    "last_directory": "C:\\Users\\liang\\Pictures"
+  },
+  "signin": {
+    "signedin_time": "13136987790604602"
+  },
+  "spellcheck": {
+    "dictionaries": [
+      "en-US"
+    ],
+    "dictionary": ""
+  },
+  "sync": {
+    "encryption_bootstrap_token": "AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAF+hiu2aHQ06MThRdfZtS8AAAAAACAAAAAAAQZgAAAAEAACAAAAD7rl4eEdHubklQhDNklnm8S9UiZlhfPc2vDBjLfaHRKAAAAAAOgAAAAAIAACAAAADzOQoMC9pqt+L5qSTn84Tpc/uRjuM/Bp8hmboOyZ10I0AAAAB0nw6UKsOPwt0T2NbF0CqWRt412ogM1HpeA0LaoNzz1mMfafDo/TCVPrgMdi4mkc7Y+gI8r2NeMaF4TdY293lcQAAAAKWxsqPQ8OE7nLchzwWo7GxxtIM7/+N4gy+6wGnNKXhrZZKjQfZDseTyGS6cCo2XEnzT0aFqW8TJi39x24FkJqU=",
+    "first_sync_time": "13136987790605072",
+    "has_setup_completed": true,
+    "invalidation_versions": {
+      "Apps": "1494389026391000",
+      "Autofill": "1494571509758000",
+      "Bookmarks": "1494590247055000",
+      "Device Info": "1494553456599000",
+      "Extensions": "1494245759194000",
+      "Favicon Images": "1494734649787000",
+      "Favicon Tracking": "1494758171857000",
+      "History Delete Directives": "1492496859263000",
+      "Passwords": "1494733833688000",
+      "Preferences": "1493461433927000",
+      "Priority Preferences": "1489819284005000",
+      "Search Engines": "1494495170234000",
+      "Sessions": "1494733818000000",
+      "Typed URLs": "1494752330660000"
+    },
+    "keystore_encryption_bootstrap_token": "AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAF+hiu2aHQ06MThRdfZtS8AAAAAACAAAAAAAQZgAAAAEAACAAAACusME7OhVxdRr2/HbE21cgxbNivA/DyWfTDARZsRbqUAAAAAAOgAAAAAIAACAAAAAasnUdDAU18HGL79KQ1v24EFRMsYNGU53TeICnhhnP8VAAAAAC12YhbMtJEKZZYIKMOUMSlMQXNKfOqmd8Hlqv7Hd7OD/HQrASTwKOK03QDcV32+FepaEaq2QHo+OsKka4T93++D6FD4StTRZAAiQ0oTOoOEAAAABlE1VOJNYUeN+E8UuN94UYC3itxphy5QyMxzCmDOresWfh3MFvqfB2RXR0Ad2etEDZ3ni/LD0bdrQQg9rG+sPI",
+    "last_run_version": "57.0.2987.133",
+    "last_synced_time": "13139854142112663",
+    "memory_warning_count": 0,
+    "session_sync_guid": "session_sync3UnxszGQ7Wo5dcC1VDOEWg==",
+    "shutdown_cleanly": false,
+    "suppress_start": false
+  },
+  "toolbar_icon_surfacing_bubble_acknowledged": true,
+  "translate": {
+    "enabled": true
+  },
+  "translate_accepted_count": {
+    "da": 0,
+    "en": 1,
+    "fr": 0,
+    "ja": 0,
+    "pl": 0,
+    "uz": 0,
+    "zh-CN": 0,
+    "zh-TW": 0
+  },
+  "translate_blocked_languages": [
+    "zh",
+    "zh-CN"
+  ],
+  "translate_denied_count_for_language": {
+    "da": 1,
+    "en": 0,
+    "fr": 1,
+    "ja": 2,
+    "pl": 1,
+    "uz": 1,
+    "zh-CN": 1,
+    "zh-TW": 2
+  },
+  "translate_ignored_count_for_language": {
+    "en": 0,
+    "fr": 6,
+    "la": 3,
+    "so": 1,
+    "uz": 1,
+    "zh-TW": 13
+  },
+  "translate_last_denied_time_for_language": {
+    "en": [
+      1492452033743.843
+    ]
+  },
+  "translate_site_blacklist": [
+    "confluence.win.fenqi.im"
+  ],
+  "translate_too_often_denied_for_language": {
+    "en": true,
+    "ja": true,
+    "zh-TW": true
+  },
+  "translate_whitelists": {},
+  "zerosuggest": {
+    "cachedresults": ""
+  }
+}
