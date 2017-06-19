@@ -16,15 +16,16 @@
             <h3 class="slide-item-title">归档</h3>
             <div class="widget">
                 <ul class="archive-list">
-                    <li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li>
-                    <li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">8</span></li>
-                    <li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">2</span></li>
+                    <li class="archive-list-item" v-for="archive in archiveList">
+                        <a class="archive-list-link" :href="archive.url">{{archive.date}}</a>
+                        <span class="archive-list-count">{{archive.number}}</span>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="slide-item">
             <h3 class="slide-item-title">标签</h3>
-            <div class="widget" id="tagcloud">
+            <div class="widget">
                 <a href="/tags/CQRS/" style="font-size:20px">CQRS</a>
                 <a href="/tags/DDD/" style="font-size:20px">DDD</a>
                 <a href="/tags/akka/" style="font-size:10px">akka</a>
@@ -39,11 +40,9 @@
             <h3 class="slide-item-title">链接</h3>
             <div class="widget">
                 <ul>
-                    <li><a href="http://bbs.springcloud.cn">SpringCloud中文社区</a></li>
-                    <li><a href="http://itmuch.com">周立|Spring Cloud</a></li>
-                    <li><a href="http://blog.didispace.com">程序猿DD</a></li>
-                    <li><a href="http://blog.xujin.org">许进|沉思录</a></li>
-                    <li><a href="http://edisonxu.org">EdisonXu</a></li>
+                    <li v-for="links in linkList">
+                        <a :href="links.url">{{links.text}}</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,7 +57,53 @@
             return {
                 msg: 'Welcome to Vue.js App',
                 viewNum: 6666,
-                notices: ["Q Q: 1786374738", "微信: wangguoliang3152", "邮箱：wglliang@126.com", "源码：<a target='_blank' href='http://www.github.com/monarchwang/myblog' style='color: #1E9FFF; text-decoration: none'>传送门</a>"]
+                notices: ["Q Q: 1786374738", "微信: wangguoliang3152", "邮箱：wglliang@126.com", "源码：<a target='_blank' href='http://www.github.com/monarchwang/myblog' style='color: #1E9FFF; text-decoration: none'>传送门</a>"],
+                archiveList: [
+                    {
+                        url: "/archives/2017/04/",
+                        date: "四月 2017",
+                        number: 2
+                    },
+                    {
+                        url: "/archives/2017/03/",
+                        date: "三月 2017",
+                        number: 8
+                    },
+                    {
+                        url: "/archives/2017/02/",
+                        date: "二月 2017",
+                        number: 6
+                    }
+                ],
+                tagList: [
+                    {
+                        url: '',
+                        text: '',
+
+                    },
+                ],
+                linkList: [
+                    {
+                        url: 'http://bbs.springcloud.cn',
+                        text: 'SpringCloud中文社区'
+                    },
+                    {
+                        url: 'http://itmuch.com',
+                        text: '周立|Spring Cloud'
+                    },
+                    {
+                        url: 'http://blog.didispace.com',
+                        text: '程序猿DD'
+                    },
+                    {
+                        url: 'http://blog.xujin.org',
+                        text: '许进|沉思录'
+                    },
+                    {
+                        url: 'http://edisonxu.org',
+                        text: 'EdisonXu'
+                    }
+                ]
             }
         },
         methods: {
@@ -75,7 +120,7 @@
     .right-slide {
         width: 100%;
         padding: 0 1rem;
-        .slide-item:first-child{
+        .slide-item:first-child {
             margin-left: 10px;
             .slide-item-title {
                 color: rgba(0, 0, 0, 0.6);
@@ -153,9 +198,9 @@
                 }
             }
         }
-        #tagcloud{
-            a{
-                &:hover{
+        #tagcloud {
+            a {
+                &:hover {
                     color: $dangerColor;
                 }
             }
