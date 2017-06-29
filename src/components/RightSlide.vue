@@ -25,7 +25,7 @@
         </div>
         <div class="slide-item">
             <h3 class="slide-item-title">标签</h3>
-            <div class="widget">
+            <div class="widget tagcloud">
                 <a href="/tags/CQRS/" style="font-size:20px">CQRS</a>
                 <a href="/tags/DDD/" style="font-size:20px">DDD</a>
                 <a href="/tags/akka/" style="font-size:10px">akka</a>
@@ -127,7 +127,8 @@
             }
             .slide-item-box {
                 margin-top: 10px;
-                padding: 1rem;
+                padding: 0.8rem;
+                font-size: 80%;
                 line-height: 1.5rem;
                 background-color: #fff9c4;
                 box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
@@ -154,10 +155,10 @@
                 color: rgba(0, 0, 0, 0.6);
             }
             .widget {
+                font-size: 80%;
                 padding: 1rem;
                 line-height: 1.6em;
                 word-wrap: break-word;
-                font-size: .9em;
                 a {
                     text-decoration: none;
                     color: #777;
@@ -170,7 +171,6 @@
                     list-style: none;
                     li {
                         padding: 10px 0;
-                        font-size: 14px;
                         a {
                             &:before {
                                 color: #ccc;
@@ -189,7 +189,6 @@
                             }
                             padding-left: 5px;
                             color: #999;
-                            font-size: .85em;
                             &:after {
                                 content: ')';
                             }
@@ -197,13 +196,14 @@
                     }
                 }
             }
-        }
-        #tagcloud {
-            a {
-                &:hover {
-                    color: $dangerColor;
+            .tagcloud {
+                a {
+                    &:hover {
+                        color: $dangerColor;
+                    }
                 }
             }
         }
+
     }
 </style>
