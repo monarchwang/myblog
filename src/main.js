@@ -5,6 +5,8 @@ import Code from './pages/Code.vue'
 import Distance from './pages/Distance.vue'
 import Poetry from './pages/Poetry.vue'
 import Readme from './pages/Readme.vue'
+import Synopses from './components/Synopses.vue'
+import ArticleDetail from './pages/ArticleDetail.vue'
 Vue.use(VueRouter);
 let router = new VueRouter({
 	mode: 'history',
@@ -14,7 +16,11 @@ let router = new VueRouter({
 			redirect: '/code'
 		}, {
 			path: '/code',
-			component: Code
+			component: Code,
+			children:[
+				{path:'/',component:Synopses},
+				{path:'article/:id',component:ArticleDetail}
+			]
 		}, {
 			path: '/poetry',
 			component: Poetry

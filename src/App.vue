@@ -46,22 +46,22 @@
 				items: [
 					{
 						text: '要填的坑',
-						router: 'code',
+						router: '/code',
 						isShow: false
 					},
 					{
 						text: '诗',
-						router: 'poetry',
+						router: '/poetry',
 						isShow: false
 					},
 					{
 						text: '远方',
-						router: 'distance',
+						router: '/distance',
 						isShow: false
 					},
 					{
 						text: '自白',
-						router: 'readme',
+						router: '/readme',
 						isShow: false
 					},
 				]
@@ -147,7 +147,7 @@
 			}
 			.search {
 				float: right;
-				width: 300px;
+				width: 400px;
 				height: $headerHeight;
 				line-height: $headerHeight;
 				label {
