@@ -3,7 +3,6 @@
 	<profile></profile>
 	<div class="synopses">
     <router-view></router-view>
-	  <!--<synopses :synopses="synopses"></synopses>-->
 	</div>
 	<div class="right-slide">
 	  <right-slide></right-slide>
