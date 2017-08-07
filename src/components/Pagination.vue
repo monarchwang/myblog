@@ -1,8 +1,5 @@
 <template>
     <div class="page">
-        <div class="item box" v-show="currentPage === 1">
-            首页
-        </div>
 
         <div class="item box" v-show="currentPage > 1" @click="setPage(currentPage - 1)">
             上一页
@@ -38,10 +35,6 @@
 
         <div class="item box" v-show="currentPage < totalPage" @click="setPage(currentPage + 1)">
             下一页
-        </div>
-
-        <div class="item box" v-show="currentPage >= totalPage">
-            尾页
         </div>
     </div>
 </template>
