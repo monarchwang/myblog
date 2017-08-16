@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import './assets/font-awesome/css/font-awesome.min.css'
 import routers from './routers'
 
 Vue.use(iView);
