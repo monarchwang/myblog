@@ -18,21 +18,27 @@
             </div>
         </div>
 
-        <pagination v-show="totalPage>1" :current-page="currentPage" :total-page="totalPage" :page-size="pageSize"
-                    :set-page="setPage"></pagination>
+        <!--<pagination v-show="totalPage>1" :current-page="currentPage" :total-page="totalPage" :page-size="pageSize"
+                    :set-page="setPage"></pagination>-->
+
+        <div class="pagination" v-show="totalNum > pageSize ">
+            <div style="margin: auto">
+                <Page :total="totalNum" :current="1" @on-change="changePage" :page-size="pageSize"></Page>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-    import Pagination from '../components/Pagination.vue'
+    //    import Pagination from '../components/Pagination.vue'
     import Api from '../api/index'
     export default {
         name: 'synopses',
         data () {
             return {
+                totalNum: 0,
                 currentPage: 1,
-                totalPage: 0,
-                pageSize: 2,
+                pageSize: 5,
                 synopses: []
             }
         },
@@ -41,6 +47,10 @@
         },
         methods: {
             // 设置分页
+            changePage(pageNum){
+                this.currentPage = pageNum;
+                this.queryBlogList();
+            },
             setPage (page) {
                 this.currentPage = page;
                 this.queryBlogList();
@@ -49,9 +59,9 @@
                 this.$router.push(`/code/article/${articleId}`);
             },
             queryBlogList(){
-                Api.queryBlogList(this.currentPage - 1, this.pageSize).then(response => {
+                Api.queryBlogList(this.currentPage, this.pageSize).then(response => {
                     this.synopses = response.data.rows;
-                    this.totalPage = response.data.pages;
+                    this.totalNum = response.data.total;
                 }).catch(error => {
                     console.log(error);
                     alert(error.message)
@@ -59,9 +69,7 @@
             }
 
         },
-        components: {
-            Pagination
-        }
+        components: {}
     }
 </script>
 
