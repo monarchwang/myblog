@@ -22,7 +22,9 @@
 		</div>
 
 		<div class="main-content content clearfix">
-			<router-view></router-view>
+			<keep-alive>
+				<router-view></router-view>
+			</keep-alive>
 		</div>
 
 		<div class="footer">
@@ -97,6 +99,7 @@
 	body {
 		color: #565a5f;
 		background: #f5f8f9;
+		overflow-y: hidden;
 		font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
 	}
 
@@ -209,4 +212,5 @@
 			clear: both;
 		}
 	}
+
 </style>

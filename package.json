@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "better-scroll": "^1.4.1",
     "iview": "^2.0.0",
     "vue": "^2.2.1",
     "vue-router": "^2.5.3"
