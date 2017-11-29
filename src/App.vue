@@ -31,7 +31,7 @@
 			<div id="footer-info" class="main-content">
 				© 2017 wangguoliang <br>
 				本站总访问量<span class="view-num">{{viewNum}}</span>次 <br>
-				Powered by <a href="https://vuejs.org/" target="_blank">Vue</a>.
+				<a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备17070653号</a>.
 			</div>
 		</div>
 
