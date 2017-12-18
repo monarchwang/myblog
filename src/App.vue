@@ -96,6 +96,8 @@
 <style lang="scss">
 	/*全局css*/
 	@import './assets/css/global.scss';
+	@import './assets/font-awesome/css/font-awesome.min.css';
+
 	body {
 		color: #565a5f;
 		background: #f5f8f9;
