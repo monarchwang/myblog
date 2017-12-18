@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugins');
 module.exports = {
     entry: './src/main.js',
     output: {
@@ -44,6 +45,9 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader'
             },
+        ],
+        loaders:[
+
         ]
     },
     resolve: {
@@ -78,6 +82,9 @@ if (process.env.NODE_ENV === 'production') {
         }),
         new webpack.LoaderOptionsPlugin({
             minimize: true
+        }),
+        new HtmlWebpackPlugin({
+            favicon: path.resolve(__dirname, './assets/favicon.ico')
         })
     ])
 }
