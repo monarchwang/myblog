@@ -58,7 +58,7 @@
                 this.queryBlogList();
             },
             toArticleDetail(articleId){
-            	window.open(`/code/article/${articleId}`)
+            	window.open(`/#/code/article/${articleId}`)
 //                this.$router.push(`/code/article/${articleId}`);
             },
             queryBlogList(){
