@@ -8,7 +8,6 @@ import routers from './routers'
 Vue.use(iView);
 Vue.use(VueRouter);
 let router = new VueRouter({
-	mode: 'history',
 	routes: routers
 });
 new Vue({
