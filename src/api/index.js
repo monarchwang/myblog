@@ -4,7 +4,7 @@
 import axios from 'axios'
 const qs = require('querystring');
 
-const ROOT = (process.env.NODE_ENV === 'production') ? 'http://PRODUCTION_URL:9090' : 'http://localhost:9090';
+const ROOT = (process.env.NODE_ENV === 'production') ? 'PRODUCTION_URL' : 'http://localhost:9090';
 
 // 拦截request,设置全局请求为ajax请求
 axios.interceptors.request.use((config) => {
