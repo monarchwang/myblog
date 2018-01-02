@@ -66,7 +66,7 @@
 			padding: 15px 20px;
 			.avatar {
 				display: block;
-				background: url("http://olnz6wvmk.bkt.clouddn.com/pg7orhzb019rlnzradnyzxgvi.jpg") no-repeat;
+				background: url("https://monarchwang.oss-cn-shanghai.aliyuncs.com/myblog/2017/08/03/16_15_53_6370120555610177.jpg") no-repeat;
 				background-size: 8rem 8rem;
 				margin: 0.9rem auto;
 				width: 7rem;
