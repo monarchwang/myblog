@@ -28,13 +28,10 @@
 
 <script>
     import Api from '../api/index'
-    import Scroll from '../base/scroll/scroll.vue'
 
     export default {
         name: 'ArticleDetail',
-        components: {
-            Scroll
-        },
+        components: {},
         data() {
             return {
                 synopsis: {},
