@@ -29,9 +29,9 @@
 
 		<div class="footer">
 			<div id="footer-info" class="main-content">
-				© 2017 wangguoliang <br>
+				© 2018 wangguoliang <a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备17070653号</a>
+				<br>
 				本站总访问量<span class="view-num">{{viewNum}}</span>次 <br>
-				<a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备17070653号</a>.
 			</div>
 		</div>
 
@@ -99,9 +99,8 @@
 	@import './assets/font-awesome/css/font-awesome.min.css';
 
 	body {
-		color: #565a5f;
-		background: #f5f8f9;
-		overflow-y: hidden;
+		color: #3f3f3f;
+		background: #fff;
 		font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
 	}
 
@@ -179,14 +178,15 @@
 	}
 
 	.content{
-		padding: 30px 10px 10px;
+		padding: 30px 10px 20px 10px;
+		min-height: 600px;
 	}
 
 	.footer {
-		border-top: 1px solid $gray5;
+		border-top: 1px solid $gray6;
 		line-height: 1.6em;
 		font-size: .85em;
-		padding-top: 1rem;
+		padding: 1rem;
 		.view-num{
 			color: #0097a7;
 			font-weight: 700;
