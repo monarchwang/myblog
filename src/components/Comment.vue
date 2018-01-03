@@ -1,6 +1,10 @@
 <template>
     <div class="comment-container">
-
+        <ul class="comments">
+            <li class="comment">
+                comment
+            </li>
+        </ul>
     </div>
 </template>
 

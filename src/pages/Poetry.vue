@@ -2,11 +2,13 @@
 	<div>
 		Poetry
 		<profile></profile>
+		<comment></comment>
 	</div>
 </template>
 
 <script>
 	import Profile from '../components/Profile.vue'
+	import Comment from '../components/Comment.vue'
 
 	export default {
 		name: 'poetry',
@@ -20,7 +22,7 @@
 				console.log('hello');
 			}
 		},
-		components:{Profile}
+		components: {Profile, Comment}
 	}
 </script>
 
