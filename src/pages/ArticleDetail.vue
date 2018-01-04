@@ -75,7 +75,7 @@
         .article {
             width: 60%;
             margin: 5rem auto;
-            /*border-radius: 1rem;*/
+            border-radius: 1rem;
 
             .article-title {
                 text-align: center;
@@ -102,8 +102,16 @@
             }
             .thumbs, .comments {
                 font-size: 0.8rem;
-                i{
+                &:hover {
+                    i {
+                        transform: scale(1.2);
+                        color: $brightColor;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                i {
                     margin-right: 6px;
+                    transition: all 0.3s ease-in-out;
                     font-size: 150%;
                 }
             }
