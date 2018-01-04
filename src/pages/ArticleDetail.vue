@@ -15,11 +15,18 @@
                             class="fa fa-calendar"></i>&nbsp;&nbsp;<span>{{synopsis.createTime}}</span></label>
                     <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<span
                             v-for="tag in synopsis.tags">{{tag}}</span></label>
+                    <span class="view-number">{{'浏览'+synopsis.viewNumber+'次'}}</span>
 
-                    <label class="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;{{synopsis.viewNumber}}</label>
-                    <label class="views"><i class="fa fa-eye"></i>&nbsp;&nbsp;{{synopsis.viewNumber}}</label>
+                    <label class="comments"><i class="fa fa-comments"></i>发表评论&nbsp;&nbsp;{{synopsis.viewNumber-Math.ceil(Math.random()*synopsis.viewNumber)}}</label>
+                    <label class="thumbs"><i class="fa fa-thumbs-up"></i>赞一下&nbsp;&nbsp;{{synopsis.viewNumber-Math.ceil(Math.random()*synopsis.viewNumber)}}</label>
+                </div>
+
+                <div class="comment">
+                    <span>文章评论</span>
+                    <comment></comment>
                 </div>
             </div>
+
         </div>
 
     </transition>
@@ -28,10 +35,12 @@
 
 <script>
     import Api from '../api/index'
+    import Comment from '../components/Comment.vue'
+
 
     export default {
         name: 'ArticleDetail',
-        components: {},
+        components: {Comment},
         data() {
             return {
                 synopsis: {},
@@ -77,6 +86,35 @@
                         text-decoration: none;
                     }
                 }
+            }
+            .view-number {
+                display: inline-block;
+                margin-left: 60px;
+            }
+            .comments {
+                cursor: pointer;
+                font-size: 150%;
+                margin-right: 10px;
+            }
+            .thumbs {
+                cursor: pointer;
+                margin-right: 45px !important;
+            }
+            .thumbs, .comments {
+                font-size: 0.8rem;
+                i{
+                    margin-right: 6px;
+                    font-size: 150%;
+                }
+            }
+            .comment {
+                span {
+                    font-size: 180%;
+                    font-weight: bold;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+                margin-top: 40px;
             }
 
         }
