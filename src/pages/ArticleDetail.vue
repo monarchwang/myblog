@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <modal :show="showReplayCommentModal" @close="closeModal">
+            <modal v-show="showReplayCommentModal" @close="closeModal">
 
             </modal>
         </div>

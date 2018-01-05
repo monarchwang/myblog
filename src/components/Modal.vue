@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-mask" v-show="visible" transition="modal">
+    <div class="modal-mask" transition="modal">
         <div class="modal-wrapper">
             <div class="modal-container">
 
@@ -36,10 +36,6 @@
         name: "modal",
         mixins: [ScrollbarMixins],
         props: {
-            show: {
-                type: Boolean,
-                default: false
-            },
             maskClosable: {
                 type: Boolean,
                 default: true
@@ -55,7 +51,6 @@
         },
         methods: {
             close() {
-                this.visible = false;
                 this.$emit('close');
             }
         },
