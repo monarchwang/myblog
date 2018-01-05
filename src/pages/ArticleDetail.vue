@@ -1,32 +1,34 @@
 <template>
     <transition name="slide">
-
         <div class="synopsis-container article-container">
 
             <div class="synopsis article">
                 <div class="synopsis-header article-title">
-                    <h1 class="synopsis-title">{{synopsis.title}}</h1>
+                    <h1 class="synopsis-title">{{blogData.title}}</h1>
                 </div>
-                <div class="synopsis-content" v-html="synopsis.content"
+                <div class="synopsis-content" v-html="blogData.content"
                      style="font-size: .9rem;overflow-x:hidden "></div>
 
                 <div class="synopsis-footer">
                     <label class="date"><i
-                            class="fa fa-calendar"></i>&nbsp;&nbsp;<span>{{synopsis.createTime}}</span></label>
+                            class="fa fa-calendar"></i>&nbsp;&nbsp;<span>{{blogData.createTime}}</span></label>
                     <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<span
-                            v-for="tag in synopsis.tags">{{tag}}</span></label>
-                    <span class="view-number">{{'浏览'+synopsis.viewNumber+'次'}}</span>
+                            v-for="tag in blogData.tags">{{tag}}</span></label>
+                    <span class="view-number">{{'浏览'+blogData.viewNumber+'次'}}</span>
 
-                    <label class="comments"><i class="fa fa-comments"></i>发表评论&nbsp;&nbsp;{{synopsis.viewNumber-Math.ceil(Math.random()*synopsis.viewNumber)}}</label>
-                    <label class="thumbs"><i class="fa fa-thumbs-up"></i>赞一下&nbsp;&nbsp;{{synopsis.viewNumber-Math.ceil(Math.random()*synopsis.viewNumber)}}</label>
+                    <label class="comments"><i class="fa fa-comments"></i>发表评论&nbsp;&nbsp;{{blogData.viewNumber-Math.ceil(Math.random()*blogData.viewNumber)}}</label>
+                    <label class="thumbs"><i class="fa fa-thumbs-up"></i>赞一下&nbsp;&nbsp;{{blogData.viewNumber-Math.ceil(Math.random()*blogData.viewNumber)}}</label>
                 </div>
 
                 <div class="comment">
                     <span>文章评论</span>
-                    <comment></comment>
+                    <comment @on-replay-comment="replayComment"></comment>
                 </div>
             </div>
 
+            <modal :show="showReplayCommentModal" @close="closeModal">
+
+            </modal>
         </div>
 
     </transition>
@@ -36,27 +38,35 @@
 <script>
     import Api from '../api/index'
     import Comment from '../components/Comment.vue'
+    import Modal from '../components/Modal.vue'
 
 
     export default {
         name: 'ArticleDetail',
-        components: {Comment},
+        components: {Comment, Modal},
         data() {
             return {
-                synopsis: {},
-                blogData: {}
+                blogData: {},
+                showReplayCommentModal: false
             }
         },
         mounted() {
             let id = this.$route.params.id;
             Api.queryBlogDetail(id).then(response => {
-                this.synopsis = response.data;
+                this.blogData = response.data;
             }).catch(error => {
                 console.log(error);
                 alert(error.message);
             })
         },
-        methods: {}
+        methods: {
+            replayComment(comment) {
+                this.showReplayCommentModal = true
+            },
+            closeModal(){
+                this.showReplayCommentModal = false
+            }
+        }
     }
 </script>
 

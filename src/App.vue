@@ -215,4 +215,9 @@
 		}
 	}
 
+	.division{
+		display: block;
+		margin-top: 25px;
+		border-bottom: 1px dashed #dfdfdf;
+	}
 </style>
