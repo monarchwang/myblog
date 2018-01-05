@@ -1,5 +1,5 @@
 // used for Modal & $Spin
-import { getScrollBarSize } from '../utils/assist';
+import { getScrollBarSize } from './assist';
 export default {
     methods: {
         checkScrollBar () {
