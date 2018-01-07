@@ -28,8 +28,16 @@
 				</div>
 			</div>
 
-			<modal v-show="showReplayCommentModal" :show="showReplayCommentModal" @close="closeModal" width="600">
+			<modal v-show="showReplayCommentModal" :show="showReplayCommentModal" @close="closeModal"
+				   :maskClosable="modal.maskClosable" width="600">
 				<h1 slot="header">{{modal.header}}</h1>
+				<div class="replay-comment-body" slot="body">
+					<input type="text" placeholder="敢问大侠尊姓大名">
+				</div>
+				<div class="replay-comment-footer clearfix" slot="footer">
+					<button class="btn-success">提交</button>
+					<button class="btn-text" @click="closeModal()">取消</button>
+				</div>
 			</modal>
 		</div>
 
@@ -42,6 +50,7 @@
 	import Comment from '../components/Comment.vue'
 	import Modal from '../components/Modal.vue'
 	import ScrollbarMixins from '../utils/mixins-scrollbar';
+	import WangEditor from 'wangeditor';
 
 
 	export default {
@@ -55,7 +64,8 @@
 				modal: {
 					header: '',
 					body: '',
-					footer: ''
+					footer: '',
+					maskClosable: false
 				}
 			}
 		},
@@ -71,12 +81,12 @@
 		},
 		methods: {
 			replayComment(comment) {
-//				this.$refs.container.style.overflowY = 'hidden';
+				this.$refs.container.style.overflowY = 'hidden';
 				this.modal.header = "回复" + comment.from;
 				this.showReplayCommentModal = true;
 			},
 			closeModal(){
-//				this.$refs.container.style.overflowY = 'auto';
+				this.$refs.container.style.overflowY = 'auto';
 				this.showReplayCommentModal = false;
 			}
 		}
@@ -85,10 +95,6 @@
 
 <style lang="scss" scoped>
 	@import '../assets/css/global.scss';
-
-	body {
-		overflow-y: hidden !important;
-	}
 
 	.article-container {
 		position: fixed;
@@ -184,5 +190,12 @@
 		transform: translate3d(100%, 0, 0);
 	}
 
-
+	.replay-comment-footer{
+		button{
+			float: right;
+			&:last-child{
+				margin-right: 20px;
+			}
+		}
+	}
 </style>
