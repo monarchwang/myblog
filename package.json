@@ -13,8 +13,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugins": "^1.0.1",
     "vue": "^2.2.1",
-    "vue-router": "^2.5.3",
-    "wangeditor": "^2.1.23"
+    "vue-router": "^2.5.3"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
