@@ -46,14 +46,13 @@
 </template>
 
 <script>
-	import Api from '../api/index'
-	import Comment from '../components/Comment.vue'
-	import Modal from '../components/Modal.vue'
-	import ScrollbarMixins from '../utils/mixins-scrollbar';
-	import WangEditor from 'wangeditor';
+    import Api from '../api/index'
+    import Comment from '../components/Comment.vue'
+    import Modal from '../components/Modal.vue'
+    import ScrollbarMixins from '../utils/mixins-scrollbar';
 
 
-	export default {
+    export default {
 		name: 'ArticleDetail',
 		mixins: [ScrollbarMixins],
 		components: {Comment, Modal},
