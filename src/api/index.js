@@ -111,5 +111,6 @@ export default {
     },
     queryBlogDetail: function (blogId) {
         return axios.get(`/blog/detail?articleId=${blogId}`, config());
-    }
+    },
+    ROOT,
 }
