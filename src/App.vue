@@ -102,6 +102,26 @@
 		color: #3f3f3f;
 		background: #fff;
 		font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+		/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 4px;
+			background-color: #f5f5f5;
+		}
+		/*定义滚动条的轨道，内阴影及圆角*/
+		&::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px $gray6;
+			border-radius: 8px;
+			background-color: #f5f5f5;
+		}
+		/*定义滑块，内阴影及圆角*/
+		&::-webkit-scrollbar-thumb {
+			/*width: 10px;*/
+			height: 8px;
+			border-radius: 8px;
+			-webkit-box-shadow: inset 0 0 1px $brightColor;
+			background-color: $decorateColor;
+		}
 	}
 
 	.header {
@@ -293,5 +313,9 @@
 			background-color: transparent;
 			border-color: transparent;
 		}
+	}
+
+	.mt-15{
+		margin-top: 15px;
 	}
 </style>

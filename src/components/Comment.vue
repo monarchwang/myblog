@@ -39,60 +39,9 @@
 <script>
     export default {
         name: "comment",
+        props:['comments'],
         data() {
             return {
-                comments: [
-                    {
-                        id: 111,
-                        from: "Tom",
-                        to: "",
-                        agreeNum: 10,
-                        disagreeNum: 5,
-                        order: 1,
-                        content: '这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？这个是对的吗？',
-                        createTime: '2017-12-31 14:54:32',
-                        reply: [{
-                            id: 123,
-                            from: "Jim",
-                            to: "Tom",
-                            agreeNum: 10,
-                            disagreeNum: 5,
-                            order: 1,
-                            content: '<span style="">是的，亲测是正确的，指定编译时的 JDK 版本是非常有必要的，尤其是在使用 IDEA 的情况下，这样可以避免 IDEA 选择 1.5 作为默认值的一些编译错误。由于不同环境使用的插件不太相同，所以这里只是一个示例，不需要按照这种方式使用。更合理的用法可能是创建一个插件的基础 pom（plugin-pom），然后在上面的的 pom 中设置 parent 为 plugin-pom，这样能满足更多情况下的选择。</span>',
-                            createTime: '2017-12-31 15:32:32',
-                        }, {
-                            id: 1234,
-                            from: "Ketty",
-                            to: "Jim",
-                            agreeNum: 10,
-                            disagreeNum: 5,
-                            order: 2,
-                            content: 'but I have a mistake',
-                            createTime: '2017-12-31 16:54:32',
-                        }],
-                    }, {
-                        id: 222,
-                        from: "Jackon",
-                        to: "",
-                        agreeNum: 10,
-                        disagreeNum: 5,
-                        order: 2,
-                        content: 'Good',
-                        createTime: '2017-12-31 15:54:32',
-                        reply: [],
-                    },
-                    {
-                        id: 666,
-                        from: "Mackle",
-                        to: "",
-                        agreeNum: 10,
-                        disagreeNum: 5,
-                        order: 3,
-                        content: 'Thank you very much',
-                        createTime: '2017-12-31 17:54:32',
-                        reply: [],
-                    }
-                ]
             }
         },
         methods: {
@@ -173,6 +122,9 @@
                             margin-left: 5px;
                             word-break: normal;
                             word-wrap: break-word;
+                            *{
+                                display: inherit !important;
+                            }
                         }
                         .comment-date {
                             display: block !important;
