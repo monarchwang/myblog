@@ -79,7 +79,7 @@
 					username: '',
 					editorContent: ''
 				},
-				editor: '',
+				editor: {},
 				comments: [
 					{
 						id: 111,
@@ -145,9 +145,7 @@
 				console.log(error);
 				alert(error.message);
 			});
-			this.$nextTick(()=>{
-				this.initEditor();
-			});
+			this.initEditor();
 		},
 		watch: {
 			showReplayCommentModal(val){
