@@ -145,7 +145,9 @@
 				console.log(error);
 				alert(error.message);
 			});
-			this.initEditor();
+			this.$nextTick(()=>{
+				this.initEditor();
+			});
 		},
 		watch: {
 			showReplayCommentModal(val){
