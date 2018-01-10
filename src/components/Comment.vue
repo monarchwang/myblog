@@ -8,18 +8,20 @@
                     <!--<span class="disagree"><i class="fa fa-thumbs-o-down"></i>{{comment.disagreeNum}}</span>-->
                     <span class="comment-date">{{comment.order+"楼 "+comment.createTime+" 发表"}}</span>
                 </div>
-                <p v-html="comment.content"></p>
+                <p class="comment-content" v-html="comment.content"></p>
                 <ul class="comments-reply" v-if="comment.reply && comment.reply.length >0">
                     <!--子一级评论-->
                     <li class="reply-item" v-for="replay in comment.reply">
-                        <template v-if="replay.to === comment.from">
-                            <span class="comment-user">{{replay.from}}</span>:&nbsp;
-                        </template>
-                        <template v-else>
-                            <span class="comment-user">{{replay.from}}</span><span>&nbsp;回复</span>
-                            <span class="comment-user">{{replay.to}}</span>:&nbsp;
-                        </template>
-                        <p v-html="replay.content"></p><br>
+                        <div class="replay-title">
+                            <template v-if="replay.to === comment.from">
+                                <span class="comment-user">{{replay.from}}</span>&nbsp;:&nbsp;
+                            </template>
+                            <template v-else>
+                                <span class="comment-user">{{replay.from}}</span><span>&nbsp;回复</span>
+                                <span class="comment-user">{{replay.to}}</span>&nbsp;:&nbsp;
+                            </template>
+                        </div>
+                        <p class="comment-content" v-html="replay.content"></p>
                         <span class="comment-date comment-replay" @click="handleReplayComment(replay)">回复</span>
                         <span class="comment-date">{{comment.createTime}}</span>
                         <span class="division"></span>
@@ -39,10 +41,9 @@
 <script>
     export default {
         name: "comment",
-        props:['comments'],
+        props: ['comments'],
         data() {
-            return {
-            }
+            return {}
         },
         methods: {
             handleReplayComment(comment) {
@@ -111,31 +112,21 @@
                     margin-left: 2rem;
                     padding-top: 0.5rem;
                     .reply-item {
-                        padding: .5rem 1rem 1rem 2rem;
+                        padding: .2rem 1rem .5rem 1rem;
                         box-sizing: border-box;
                         .title {
                             display: inline-block;
                             float: left;
                         }
-                        p {
-                            display: inline;
-                            margin-left: 5px;
-                            word-break: normal;
-                            word-wrap: break-word;
-                            *{
-                                display: inherit !important;
-                            }
-                        }
                         .comment-date {
                             display: block !important;
-                            margin-top: 5px;
                             margin-right: 10px;
                         }
                     }
                     .replay-btn {
                         float: right;
                         margin-right: 1.2rem;
-                        margin-bottom: 1rem;
+                        margin-bottom: .5rem;
                         display: inline-block;
                         padding: 4px 8px;
                         font-size: 12px;
@@ -150,6 +141,11 @@
                             color: #3e89fa;
                         }
                     }
+                }
+                p.comment-content {
+                    margin-top: 5px;
+                    word-break: normal;
+                    word-wrap: break-word;
                 }
             }
 

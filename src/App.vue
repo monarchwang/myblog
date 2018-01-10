@@ -199,7 +199,6 @@
 
 	.content{
 		padding: 30px 10px 20px 10px;
-		min-height: 600px;
 	}
 
 	.footer {
@@ -237,7 +236,7 @@
 
 	.division{
 		display: block;
-		margin-top: 25px;
+		margin-top: 15px;
 		border-bottom: 1px dashed #dfdfdf;
 	}
 

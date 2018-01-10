@@ -14,7 +14,7 @@
     "html-webpack-plugins": "^1.0.1",
     "vue": "^2.2.1",
     "vue-router": "^2.5.3",
-    "wangeditor": ">=3.0.0"
+    "wangeditor": "^2.1.23"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
