@@ -99,7 +99,7 @@
                     float: right;
                     font-size: 0.1rem;
                     color: #aaa;
-                    margin-top: -5px;
+                    margin-top: 2px;
                 }
                 .comment-replay {
                     cursor: pointer;

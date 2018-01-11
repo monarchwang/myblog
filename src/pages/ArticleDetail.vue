@@ -16,23 +16,27 @@
                             v-for="tag in blogData.tags">{{tag}}</span></label>
                     <span class="view-number">{{'浏览' + blogData.viewNumber + '次'}}</span>
 
-                    <label class="comments"><i
-                            class="fa fa-comments"></i>发表评论&nbsp;&nbsp;{{blogData.viewNumber - Math.ceil(Math.random() *
-                        blogData.viewNumber)}}</label>
-                    <label class="thumbs"><i
-                            class="fa fa-thumbs-up"></i>赞一下&nbsp;&nbsp;{{blogData.viewNumber - Math.ceil(Math.random() *
-                        blogData.viewNumber)}}</label>
+                    <label class="comments" @click="replayComment()">
+                        <button class="btn-text"><i class="fa fa-comments"></i>发表评论&nbsp;&nbsp;{{blogData.viewNumber}}
+                        </button>
+                    </label>
+                    <label class="thumbs" @click="praise()">
+                        <button class="btn-text"><i class="fa fa-thumbs-up" v-bind:class="{'thumb-up':thumbUp}"></i>赞一下&nbsp;&nbsp;{{blogData.thumbUp}}
+                        </button>
+                    </label>
                 </div>
 
                 <div class="comment">
                     <span>文章评论</span>
                     <comment @on-replay-comment="replayComment" :comments="comments"></comment>
+                    <button class="btn-success"  @click="replayComment()"><i class="fa fa-edit">&nbsp;&nbsp;发表新评论</i>
+                    </button>
                 </div>
             </div>
 
 
             <modal v-show="showReplayCommentModal" :show="showReplayCommentModal" @close="closeModal"
-                   :maskClosable="modal.maskClosable" width="600">
+                   :maskClosable="modal.maskClosable" width="500">
                 <h1 slot="header">{{modal.header}}</h1>
                 <div class="replay-comment-body" slot="body">
                     <input type="text" v-model="modal.username" placeholder="敢问大侠尊姓大名">
@@ -69,6 +73,7 @@
                     editorUpImgUrl: Api.ROOT.substring(0, Api.ROOT.lastIndexOf("/")) + '/upload'  // 编辑器插入的图片上传地址
                 },
                 blogData: {},
+                thumbUp: false,
                 showReplayCommentModal: false,
                 editor: '',
                 modal: {
@@ -153,13 +158,25 @@
                     this.$refs.container.style.overflowY = 'hidden';
                 } else {
                     this.$refs.container.style.overflowY = 'auto';
+                    this.editor.clear();
                 }
             }
         },
         methods: {
+            praise() {
+                //赞文章
+                this.thumbUp = !this.thumbUp;
+                let thumbUpNum = this.blogData.thumbUp;
+                this.blogData.thumbUp = this.thumbUp ? thumbUpNum ? thumbUpNum + 1 : 1 : thumbUpNum ? thumbUpNum - 1 : 0;
+            },
             replayComment(comment) {
-                this.modal.header = "回复" + comment.from;
-                this.modal.comment = comment;
+                if (comment) {
+                    this.modal.header = "回复" + comment.from;
+                    this.modal.comment = comment;
+                } else {
+                    this.modal.header = "发表评论";
+                }
+
                 this.showReplayCommentModal = true;
             },
             closeModal() {
@@ -168,6 +185,13 @@
             submitComment() {
                 //提交评论
                 let targetId = this.modal.comment.id;
+                if (!targetId){
+                    //发表对文章的评论
+                    this.comments.push({
+
+                    })
+
+                }
                 this.comments.forEach(c => {
                     if (c.reply && c.reply.length > 0) {
                         c.reply.forEach(r => {
@@ -228,8 +252,7 @@
 
                 editor.config.menus = [
                     'bold', 'underline', 'eraser', 'forecolor', 'bgcolor', '|',
-                    'link', 'unlink', 'emotion', 'img', 'insertcode', '|',
-                    'undo', 'redo', 'fullscreen'
+                    'link', 'unlink', 'emotion', 'img', 'insertcode', 'fullscreen'
                 ];
                 editor.config.menuFixed = false;
                 editor.config.uploadImgUrl = this.dataInterface.editorUpImgUrl;  // 图片上传地址
@@ -282,10 +305,16 @@
             }
             .thumbs, .comments {
                 font-size: 0.8rem;
+                transition: all 0.3s ease-in-out;
+                .btn-text {
+                    color: inherit;
+                    &:hover {
+                        background-color: $gray2;
+                    }
+                }
                 &:hover {
                     i {
                         transform: scale(1.2);
-                        color: $brightColor;
                         transition: all 0.3s ease-in-out;
                     }
                 }
@@ -351,5 +380,11 @@
                 margin-right: 20px;
             }
         }
+    }
+
+    .thumb-up {
+        transform: scale(1.2);
+        color: $dangerColor;
+        transition: all 0.3s ease-in-out;
     }
 </style>

@@ -236,7 +236,7 @@
 
 	.division{
 		display: block;
-		margin-top: 15px;
+		margin-top: 20px;
 		border-bottom: 1px dashed #dfdfdf;
 	}
 
@@ -292,6 +292,9 @@
 		&:hover{
 			background-color: #33d685;
 			border-color: #33d685;
+		}
+		i{
+			word-spacing: 0.2rem;
 		}
 	}
 	.btn-info {
