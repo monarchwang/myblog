@@ -6,7 +6,7 @@
                     <span class="comment-user">{{comment.from}}</span>
                     <!--<span class="agree"><i class="fa fa-thumbs-o-up"></i>{{comment.agreeNum}}</span>-->
                     <!--<span class="disagree"><i class="fa fa-thumbs-o-down"></i>{{comment.disagreeNum}}</span>-->
-                    <span class="comment-date">{{comment.order+"楼 "+comment.createTime+" 发表"}}</span>
+                    <span class="comment-date">{{comment.floor+"楼 "+comment.createTime+" 发表"}}</span>
                 </div>
                 <p class="comment-content" v-html="comment.content"></p>
                 <ul class="comments-reply" v-if="comment.reply && comment.reply.length >0">
