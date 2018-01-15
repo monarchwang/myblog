@@ -16,8 +16,8 @@
                     <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<span
                             v-for="tag in synopsis.tags">{{tag}}</span></label>
 
-                    <label class="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;{{synopsis.viewNumber-Math.ceil(Math.random()*synopsis.viewNumber)}}</label>
-                    <label class="thumbs"><i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;{{synopsis.viewNumber-Math.ceil(Math.random()*synopsis.viewNumber)}}</label>
+                    <label class="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;{{synopsis.commentsNumber}}</label>
+                    <label class="thumbs"><i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;{{synopsis.agreeNumber}}</label>
                     <label class="views"><i class="fa fa-eye"></i>&nbsp;&nbsp;{{synopsis.viewNumber}}</label>
                 </div>
             </div>
@@ -149,10 +149,10 @@
                     }
                 }
 
-                .views, .comments,.thumbs {
+                .views, .comments, .thumbs {
                     float: right;
                 }
-                .views,.thumbs {
+                .views, .thumbs {
                     margin-right: 15px;
                 }
             }

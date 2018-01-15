@@ -3,35 +3,36 @@
         <ul class="comments">
             <li v-for="comment in comments" class="comment">
                 <div class="title">
-                    <span class="comment-user">{{comment.from}}</span>
-                    <!--<span class="agree"><i class="fa fa-thumbs-o-up"></i>{{comment.agreeNum}}</span>-->
-                    <!--<span class="disagree"><i class="fa fa-thumbs-o-down"></i>{{comment.disagreeNum}}</span>-->
-                    <span class="comment-date">{{comment.floor+"楼 "+comment.createTime+" 发表"}}</span>
+                    <span class="comment-user">{{comment.fromUser}}</span>
+                    <!--<span class="agree"><i class="fa fa-thumbs-o-up"></i>{{comment.agreeNumber}}</span>-->
+                    <!--<span class="disagree"><i class="fa fa-thumbs-o-down"></i>{{comment.disagreeNumber}}</span>-->
+                    <span class="comment-date">{{comment.floorNumber+"楼 "+ comment.createTime+" 发表"}}</span>
                 </div>
                 <p class="comment-content" v-html="comment.content"></p>
-                <ul class="comments-reply" v-if="comment.reply && comment.reply.length >0">
+                <ul class="comments-reply" v-if="comment.replies && comment.replies.length >0">
                     <!--子一级评论-->
-                    <li class="reply-item" v-for="replay in comment.reply">
+                    <li class="reply-item" v-for="replay in comment.replies">
                         <div class="replay-title">
-                            <template v-if="replay.to === comment.from">
-                                <span class="comment-user">{{replay.from}}</span>&nbsp;:&nbsp;
+                            <template v-if="replay.toUser === comment.fromUser">
+                                <span class="comment-user">{{replay.fromUser}}</span>&nbsp;:&nbsp;
                             </template>
                             <template v-else>
-                                <span class="comment-user">{{replay.from}}</span><span>&nbsp;回复</span>
-                                <span class="comment-user">{{replay.to}}</span>&nbsp;:&nbsp;
+                                <span class="comment-user">{{replay.fromUser}}</span><span>&nbsp;回复</span>
+                                <span class="comment-user">{{replay.toUser}}</span>&nbsp;:&nbsp;
                             </template>
                         </div>
                         <p class="comment-content" v-html="replay.content"></p>
-                        <span class="comment-date comment-replay" @click="handleReplayComment(replay)">回复</span>
+                        <span class="comment-date comment-replay"
+                              @click="handleReplayComment(replay,comment.id)">回复</span>
                         <span class="comment-date">{{comment.createTime}}</span>
                         <span class="division"></span>
                     </li>
                     <li class="clearfix">
-                        <a href="#" class="replay-btn" @click.stop.prevent="handleReplayComment(comment)">我也说一句</a>
+                        <a href="#" class="replay-btn" @click.stop.prevent="handleReplayComment(comment,comment.id)">我也说一句</a>
                     </li>
                 </ul>
                 <div v-else>
-                    <span class="comment-date comment-replay" @click="handleReplayComment(comment)">回复</span>
+                    <span class="comment-date comment-replay" @click="handleReplayComment(comment,comment.id)">回复</span>
                 </div>
             </li>
         </ul>
@@ -46,7 +47,8 @@
             return {}
         },
         methods: {
-            handleReplayComment(comment) {
+            handleReplayComment(comment, parentId) {
+                comment._parentId = parentId;
                 this.$emit('on-replay-comment', comment);
             }
         }
