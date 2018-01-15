@@ -100,7 +100,7 @@
 
 	body {
 		color: #3f3f3f;
-		background: #fff;
+		background: $gray1;
 		font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
 		/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
 		&::-webkit-scrollbar {
@@ -319,5 +319,17 @@
 
 	.mt-15{
 		margin-top: 15px;
+	}
+	a{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-weight: inherit;
+		font-style: inherit;
+		font-family: inherit;
+		font-size: 100%;
+		vertical-align: baseline;
+		text-decoration: none;
 	}
 </style>

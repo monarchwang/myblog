@@ -1,10 +1,13 @@
 <template>
 	<div>
 		<h1>{{msg}}</h1>
+		<timeline></timeline>
 	</div>
 </template>
 
 <script>
+	import Timeline from '../components/Timeline.vue'
+
 	export default {
 		name: 'distance',
 		data () {
@@ -16,7 +19,8 @@
 			hello () {
 				console.log('hello');
 			}
-		}
+		},
+		components: {Timeline}
 	}
 </script>
 
