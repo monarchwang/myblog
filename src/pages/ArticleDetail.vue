@@ -85,7 +85,7 @@
                     username: '',
                     editorContent: ''
                 },
-                comments: []
+                comments: [],
             }
         },
         mounted() {
@@ -104,9 +104,12 @@
             showReplayCommentModal(val) {
                 if (val) {
                     this.$refs.container.style.overflowY = 'hidden';
+                    this.$refs.container.style.paddingRight = '10px';
                 } else {
                     this.$refs.container.style.overflowY = 'auto';
+                    this.$refs.container.style.paddingRight = '0';
                     this.editor.clear();
+                    this.modal.comment = {};
                 }
             }
         },
@@ -136,11 +139,12 @@
             submitComment() {
                 //提交评论
                 let comment = {
-                    parentId: this.modal.comment._parentId,
+                    parentId: this.modal.comment.id,
                     articleId: this.blogData.id,
                     content: this.modal.editorContent,
                     fromUser: this.modal.username,
-                    toUser: this.modal.comment.fromUser
+                    toUser: this.modal.comment.fromUser,
+                    floorNumber: this.modal.comment.floorNumber
                 };
                 Api.saveComment(comment).then(res => {
                     Api.getComments(this.blogData.id).then(res => {
@@ -171,6 +175,7 @@
                     content = content.replace(/<br><\/p>/g, "</p>").replace(/<p><\/p>/g, "");
                     this.modal.editorContent = content;
                 };
+
                 editor.config.emotions = {
                     "qq": {
                         title: "QQ",
@@ -190,6 +195,7 @@
                     'bold', 'underline', 'eraser', 'forecolor', 'bgcolor', '|',
                     'link', 'unlink', 'emotion', 'img', 'insertcode', 'fullscreen'
                 ];
+                editor.config.printLog = false;
                 editor.config.menuFixed = false;
                 editor.config.uploadImgUrl = this.dataInterface.editorUpImgUrl;  // 图片上传地址
                 editor.config.uploadImgFileName = 'file';  // 统一指定上传的文件name，需要指定。否则默认不同的上传方式是不同的name

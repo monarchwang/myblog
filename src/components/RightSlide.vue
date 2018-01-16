@@ -26,34 +26,35 @@
         <div class="slide-item">
             <h3 class="slide-item-title">标签</h3>
             <div class="widget tagcloud">
-                <a href="/tags/CQRS/" style="font-size:20px">CQRS</a>
-                <a href="/tags/DDD/" style="font-size:20px">DDD</a>
-                <a href="/tags/akka/" style="font-size:10px">akka</a>
-                <a href="/tags/axon/" style="font-size:20px">axon</a>
-                <a href="/tags/eventsourcing/" style="font-size:20px">eventsourcing</a>
-                <a href="/tags/eventuate/" style="font-size:10px">eventuate</a>
-                <a href="/tags/多线程/" style="font-size:10px">多线程</a>
-                <a href="/tags/感悟/" style="font-size:10px">感悟</a>
-                <a href="/tags/杂项/" style="font-size:10px">杂项</a></div>
-        </div>
-        <div class="slide-item">
-            <h3 class="slide-item-title">链接</h3>
-            <div class="widget">
-                <ul>
-                    <li v-for="links in linkList">
-                        <a :href="links.url">{{links.text}}</a>
-                    </li>
-                </ul>
+                <span :style="{fontSize: Math.random()*8+9+'px'}" @click="clickTag(tag)"
+                      v-for="tag in tagList">
+                    {{tag}}
+                </span>
+            </div>
+            <div class="slide-item">
+                <h3 class="slide-item-title">链接</h3>
+                <div class="widget">
+                    <ul>
+                        <li v-for="links in linkList">
+                            <a :href="links.url">{{links.text}}</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
     export default {
+        props: {
+            tagList: {
+                type: Array,
+                default: []
+            }
+        },
         name: 'RightSlide',
-        data () {
+        data() {
             return {
                 msg: 'Welcome to Vue.js App',
                 viewNum: 6666,
@@ -75,13 +76,7 @@
                         number: 6
                     }
                 ],
-                tagList: [
-                    {
-                        url: '',
-                        text: '',
-
-                    },
-                ],
+                tagsNum: 0,
                 linkList: [
                     {
                         url: 'http://bbs.springcloud.cn',
@@ -107,8 +102,8 @@
             }
         },
         methods: {
-            hello () {
-                console.log('Hello');
+            clickTag(tag) {
+                this.$emit('on-click-tag', tag);
             }
         }
     }
@@ -197,7 +192,10 @@
                 }
             }
             .tagcloud {
-                a {
+                span {
+                    padding-right: 10px;
+                    cursor: pointer;
+                    color: #777;
                     &:hover {
                         color: $dangerColor;
                     }

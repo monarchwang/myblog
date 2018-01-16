@@ -109,8 +109,10 @@ function config() {
  */
 export default {
     ROOT,
-    queryBlogList(pageNum, pageSize) {
-        return axios.get(`/blog/query?pageNum=${pageNum}&pageSize=${pageSize}`, config());
+    queryBlogList(pageNum, pageSize, tagName) {
+        let tag = tagName ? tagName : "";
+        let url = `/blog/query?pageNum=${pageNum}&pageSize=${pageSize}&tagName=${tag}`;
+        return axios.get(url, config());
     },
     queryBlogDetail(blogId) {
         return axios.get(`/blog/detail?articleId=${blogId}`, config());
@@ -123,5 +125,10 @@ export default {
     },
     praiseBlog(blogId, num) {
         return axios.get(`/blog/praise?blogId=${blogId}&num=${num}`, config());
+    },
+    getAllTags(tagName){
+        let tag = tagName ? tagName : "";
+        let url = `/tag/getAllTags?tagName=${tag}`;
+        return axios.get(url, config());
     }
 }

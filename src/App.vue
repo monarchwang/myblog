@@ -171,9 +171,11 @@
 			}
 			.search {
 				float: right;
-				width: 400px;
 				height: $headerHeight;
 				line-height: $headerHeight;
+				margin-right: 115px;
+
+
 				label {
 					.input {
 						border: 1px solid $gray5;
@@ -185,7 +187,9 @@
 						background: 0;
 					}
 					i {
-						margin-left: -30px;
+						margin-top: -35px;
+						margin-right: 10px;
+						float: right;
 					}
 				}
 			}

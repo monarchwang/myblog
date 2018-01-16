@@ -13,8 +13,8 @@
                 <div class="synopsis-footer">
                     <label class="date"><i
                             class="fa fa-calendar"></i>&nbsp;&nbsp;<span>{{synopsis.createTime}}</span></label>
-                    <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<span
-                            v-for="tag in synopsis.tags">{{tag}}</span></label>
+                    <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<a :href="'#/code/tags/' + tag"
+                            v-for="tag in synopsis.tags">{{tag}}</a></label>
 
                     <label class="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;{{synopsis.commentsNumber}}</label>
                     <label class="thumbs"><i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;{{synopsis.agreeNumber}}</label>
@@ -138,13 +138,15 @@
                 line-height: 50px;
                 .tags {
                     margin-left: 20px;
-                    span {
+                    a {
+                        &:visited {
+                        }
                         cursor: pointer;
                         &:hover {
                             color: $brightColor;
                         }
                     }
-                    span + span {
+                    a + a {
                         margin-left: 10px;
                     }
                 }

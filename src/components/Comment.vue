@@ -13,7 +13,7 @@
                     <!--子一级评论-->
                     <li class="reply-item" v-for="replay in comment.replies">
                         <div class="replay-title">
-                            <template v-if="replay.toUser === comment.fromUser">
+                            <template v-if="replay.parentId === comment.id">
                                 <span class="comment-user">{{replay.fromUser}}</span>&nbsp;:&nbsp;
                             </template>
                             <template v-else>
@@ -23,16 +23,18 @@
                         </div>
                         <p class="comment-content" v-html="replay.content"></p>
                         <span class="comment-date comment-replay"
-                              @click="handleReplayComment(replay,comment.id)">回复</span>
+                              @click="handleReplayComment(replay, comment.id, comment.floorNumber)">回复</span>
                         <span class="comment-date">{{comment.createTime}}</span>
                         <span class="division"></span>
                     </li>
                     <li class="clearfix">
-                        <a href="#" class="replay-btn" @click.stop.prevent="handleReplayComment(comment,comment.id)">我也说一句</a>
+                        <a href="#" class="replay-btn"
+                           @click.stop.prevent="handleReplayComment(comment, comment.id, comment.floorNumber)">我也说一句</a>
                     </li>
                 </ul>
                 <div v-else>
-                    <span class="comment-date comment-replay" @click="handleReplayComment(comment,comment.id)">回复</span>
+                    <span class="comment-date comment-replay"
+                          @click="handleReplayComment(comment, comment.id, comment.floorNumber)">回复</span>
                 </div>
             </li>
         </ul>
@@ -47,8 +49,9 @@
             return {}
         },
         methods: {
-            handleReplayComment(comment, parentId) {
+            handleReplayComment(comment, parentId, floor) {
                 comment._parentId = parentId;
+                comment.floorNumber = floor;
                 this.$emit('on-replay-comment', comment);
             }
         }
@@ -114,7 +117,7 @@
                     margin-left: 2rem;
                     padding-top: 0.5rem;
                     .reply-item {
-                        padding: .2rem 1rem .5rem 1rem;
+                        padding: .2rem 0 .5rem 1rem;
                         box-sizing: border-box;
                         .title {
                             display: inline-block;
@@ -127,7 +130,7 @@
                     }
                     .replay-btn {
                         float: right;
-                        margin-right: 1.2rem;
+                        margin-right: .5rem;
                         margin-bottom: .5rem;
                         display: inline-block;
                         padding: 4px 8px;
