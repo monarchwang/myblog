@@ -26,7 +26,7 @@
         <div class="slide-item">
             <h3 class="slide-item-title">标签</h3>
             <div class="widget tagcloud">
-                <span :style="{fontSize: Math.random()*8+9+'px'}" @click="clickTag(tag)"
+                <span :style="{fontSize: tagFontSize[Math.floor(Math.random()*tagFontSize.length)]}" @click="clickTag(tag)"
                       v-for="tag in tagList">
                     {{tag}}
                 </span>
@@ -56,7 +56,7 @@
         name: 'RightSlide',
         data() {
             return {
-                msg: 'Welcome to Vue.js App',
+                tagFontSize:['8px','14px','16px','20px'],
                 viewNum: 6666,
                 notices: ["Q Q: 1786374738", "微信: wangguoliang3152", "邮箱：wglliang@126.com", "源码：<a target='_blank' href='http://www.github.com/monarchwang/myblog' style='color: #1E9FFF; text-decoration: none'>传送门</a>"],
                 archiveList: [
@@ -169,8 +169,7 @@
                         a {
                             &:before {
                                 color: #ccc;
-                                content: "\f0da";
-                                font-family: FontAwesome;
+                                content: "^";
                                 font-size: 12px;
                                 margin-right: 6px;
                                 -webkit-transition: .2s ease;

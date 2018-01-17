@@ -16,14 +16,14 @@
                     <div class="article-meta">
                         <div class="article-date">
                             <i class="fa fa-calendar"></i>
-                            <a :href="'#/code/detail/'+item.id">
+                            <a :href="articleBaseUrl+item.id">
                                 <time datetime="2017-01-12T09:42:14.000Z" itemprop="datePublished">{{item.createTime}}
                                 </time>
                             </a>
                         </div>
                         <i class="fa fa-tag tags"></i>
                         <div class="tags-wrap">
-                            <a class="tag-link" :href="baseUrl + tag" v-for="tag in item.tags">{{tag}}</a>
+                            <a class="tag-link" @click.stop.prevent="tagClick(tag)" v-for="tag in item.tags">{{tag}}</a>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,9 @@
         props: {
             dataList: {
                 type: Array,
-                default: []
+                default () {
+                    return [];
+                }
             },
             title: {
                 type: String,
@@ -64,8 +66,8 @@
             }
         },
         methods: {
-            hello() {
-                console.log('hello');
+            tagClick(tag) {
+                this.$emit('on-tag-click', tag);
             }
         }
     }
@@ -99,6 +101,7 @@
                 a {
                     color: #565a5f;
                     transition: .2s ease;
+                    cursor: pointer;
                     &:visited {
                         /*color: #38b7ea;*/
                     }

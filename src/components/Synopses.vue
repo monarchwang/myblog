@@ -138,6 +138,7 @@
                 line-height: 50px;
                 .tags {
                     margin-left: 20px;
+
                     a {
                         &:visited {
                         }

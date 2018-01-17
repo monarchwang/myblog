@@ -12,3 +12,20 @@ $gray3: #eeeeee;
 $gray4: #dddddd;
 $gray5: #d2d2d2;
 $gray6: #c2c2c2;
+
+.error {
+  border: 1px solid $dangerColor;
+}
+
+.error-msg {
+  margin-top: 10px;
+  display: block;
+  border: 1px solid #fbd9d0;
+  background-color: #fdece8;
+  padding: 8px 48px 8px 16px;
+  border-radius: 6px;
+  color: #495060;
+  font-size: 12px;
+  line-height: 16px;
+  box-sizing: border-box;
+}

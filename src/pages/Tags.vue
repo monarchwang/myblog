@@ -1,6 +1,6 @@
 <template>
     <div>
-        <timeline :title="tag" icon="tag" :dataList="dataList"></timeline>
+        <timeline :title="tag" icon="tag" :dataList="dataList" @on-tag-click="tagClick"></timeline>
         <!--分页组件-->
         <div class="pagination" v-show="totalNum > pageSize ">
             <pagination :current-page="currentPage" :total-page="totalPage"
@@ -32,6 +32,13 @@
             },
 
         },
+        created() {
+            //监听RightSlide.vue组件触发的事件
+            Api.Bus.$on('on-click-tag', tag => {
+                this.tag = tag;
+                this.queryBlogList();
+            })
+        },
         mounted() {
             this.tag = this.$route.params.tag;
             this.queryBlogList();
@@ -44,12 +51,16 @@
             },
             queryBlogList() {
                 Api.queryBlogList(this.currentPage, this.pageSize, this.tag).then(response => {
-                    this.dataList = response.data.rows;
+                    this.dataList = response.data.rows ? response.data.rows : [];
                     this.totalNum = response.data.total;
                 }).catch(error => {
                     console.log(error);
                     alert(error.message)
                 })
+            },
+            tagClick(tag) {
+                this.tag = tag;
+                this.queryBlogList();
             }
         }
     }

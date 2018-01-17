@@ -1,8 +1,10 @@
 <template>
     <div class="code-container clearfix">
-        <profile></profile>
+        <profile :blogSum="blogSum" :tagSum="tags.length"></profile>
         <div class="synopses">
-            <router-view></router-view>
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
         </div>
         <div class="right-slide">
             <right-slide :tagList="tags" @on-click-tag="clickTag"></right-slide>
@@ -22,17 +24,20 @@
         data() {
             return {
                 msg: 'Welcome to Your Vue.js App',
-                tags: []
+                tags: [],
+                blogSum: 0
             }
         },
         methods: {
             clickTag(tag) {
                 this.$router.push({path: `/code/tags/${tag}`});
+                Api.Bus.$emit('on-click-tag', tag);
             }
         },
         mounted() {
             Api.getAllTags("").then(res => {
                 let arr = [];
+                this.blogSum = res.data.total;
                 res.data.rows.forEach(tag => {
                     arr.push(tag.name)
                 });

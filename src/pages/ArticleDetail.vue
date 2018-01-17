@@ -42,6 +42,7 @@
                     <input type="text" v-model="modal.username" placeholder="敢问大侠尊姓大名">
                     <div class="mt-15"></div>
                     <div id="editorElement" class="replay-editor"></div>
+                    <span class="error-msg" v-show="!canSubmit">请填写完整呦</span>
                 </div>
                 <div class="replay-comment-footer clearfix" slot="footer">
                     <button class="btn-success" @click="submitComment()">提交</button>
@@ -59,7 +60,6 @@
     import Comment from '../components/Comment.vue'
     import Modal from '../components/Modal.vue'
     import ScrollbarMixins from '../utils/mixins-scrollbar';
-    import WangEditor from 'wangeditor'
     import Emotion from '../emotions';
 
 
@@ -108,9 +108,14 @@
                 } else {
                     this.$refs.container.style.overflowY = 'auto';
                     this.$refs.container.style.paddingRight = '0';
-                    this.editor.clear();
+                    this.editor.txt.clear();
                     this.modal.comment = {};
                 }
+            }
+        },
+        computed: {
+            canSubmit() {
+                return this.modal.username && this.modal.editorContent;
             }
         },
         methods: {
@@ -137,6 +142,9 @@
                 this.showReplayCommentModal = false;
             },
             submitComment() {
+                if (!this.canSubmit) {
+                    return;
+                }
                 //提交评论
                 let comment = {
                     parentId: this.modal.comment.id,
@@ -167,38 +175,54 @@
 
             },
             initEditor() {
-                // //初始化编辑器
-                let editor = new WangEditor('editorElement');
-                editor.onchange = () => {
+                //初始化编辑器
+                if (this.editor) {
+                    return;
+                }
+                const Editor = window.wangEditor;
+                let editor = new Editor('#editorElement');
+                editor.customConfig.onchange = () => {
                     //去除最后一个<p>
-                    let content = this.editor.$txt.html();
+                    let content = this.editor.txt.html();
                     content = content.replace(/<br><\/p>/g, "</p>").replace(/<p><\/p>/g, "");
                     this.modal.editorContent = content;
                 };
 
-                editor.config.emotions = {
-                    "qq": {
-                        title: "QQ",
-                        data: Emotion.qq_motion
-                    },
-                    'weibo': {
-                        title: "微博",
-                        data: Emotion.sina_emotion
-                    },
-                    "favourite": {
-                        title: "趣图",
-                        data: Emotion.expression
-                    }
-                };
+                editor.customConfig.emotions = [{
+                    title: "QQ",
+                    type: 'image',
+                    content: Emotion.qq_motion
+                }, {
+                    title: "微博",
+                    type: 'image',
+                    content: Emotion.sina_emotion
+                }, {
+                    title: "趣图",
+                    type: 'image',
+                    content: Emotion.expression
+                }];
 
-                editor.config.menus = [
-                    'bold', 'underline', 'eraser', 'forecolor', 'bgcolor', '|',
-                    'link', 'unlink', 'emotion', 'img', 'insertcode', 'fullscreen'
+                editor.customConfig.menus = [
+                    'head',  // 标题
+                    'bold',  // 粗体
+                    'italic',  // 斜体
+                    'underline',  // 下划线
+                    'strikeThrough',  // 删除线
+                    'foreColor',  // 文字颜色
+                    'backColor',  // 背景颜色
+                    'link',  // 插入链接
+                    'quote',  // 引用
+                    'emoticon',  // 表情
+                    'image',  // 插入图片
+                    'code',  // 插入代码
                 ];
-                editor.config.printLog = false;
-                editor.config.menuFixed = false;
-                editor.config.uploadImgUrl = this.dataInterface.editorUpImgUrl;  // 图片上传地址
-                editor.config.uploadImgFileName = 'file';  // 统一指定上传的文件name，需要指定。否则默认不同的上传方式是不同的name
+                // 隐藏“网络图片”tab
+                // editor.customConfig.showLinkImg = false;
+                editor.customConfig.debug = false;
+                editor.customConfig.printLog = false;
+                editor.customConfig.menuFixed = false;
+                editor.customConfig.uploadImgServer = this.dataInterface.editorUpImgUrl;  // 图片上传地址
+                editor.customConfig.uploadImgFileName = 'file';  // 统一指定上传的文件name，需要指定。否则默认不同的上传方式是不同的name
                 editor.create();
                 this.editor = editor;
             }
@@ -250,6 +274,8 @@
                 transition: all 0.3s ease-in-out;
                 .btn-text {
                     color: inherit;
+                    vertical-align: center;
+                    padding-top: -8px;
                     &:hover {
                         background-color: $gray2;
                     }
@@ -328,5 +354,6 @@
         transform: scale(1.2);
         color: $dangerColor;
         transition: all 0.3s ease-in-out;
+        background: url("../assets/img/thumb-up.png") no-repeat center;
     }
 </style>

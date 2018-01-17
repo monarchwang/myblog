@@ -2,6 +2,7 @@
  * Created by liang on 2017/8/1.
  */
 import axios from 'axios'
+import Vue from 'vue';
 
 const qs = require('querystring');
 
@@ -109,6 +110,7 @@ function config() {
  */
 export default {
     ROOT,
+    Bus: new Vue(),
     queryBlogList(pageNum, pageSize, tagName) {
         let tag = tagName ? tagName : "";
         let url = `/blog/query?pageNum=${pageNum}&pageSize=${pageSize}&tagName=${tag}`;
@@ -126,7 +128,7 @@ export default {
     praiseBlog(blogId, num) {
         return axios.get(`/blog/praise?blogId=${blogId}&num=${num}`, config());
     },
-    getAllTags(tagName){
+    getAllTags(tagName) {
         let tag = tagName ? tagName : "";
         let url = `/tag/getAllTags?tagName=${tag}`;
         return axios.get(url, config());

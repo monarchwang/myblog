@@ -9,8 +9,8 @@
 		</div>
 
 		<div id="article-info" class="article-info clearfix">
-			<div class="article-info-item"><i class="fa fa-file-text-o"></i> 12</div>
-			<div class="article-info-item"><i class="fa fa-tags"></i>8</div>
+			<div class="article-info-item"><i class="fa fa-article"></i> {{blogSum}}</div>
+			<div class="article-info-item"><i class="fa fa-tags"></i> {{tagSum}}</div>
 		</div>
 
 		<div class="contact-info">
@@ -36,6 +36,7 @@
 <script>
 	export default {
 		name: 'profile',
+		props:['blogSum','tagSum'],
 		data () {
 			return {
 				msg: 'Welcome to Your Vue.js App',
@@ -94,7 +95,7 @@
 				width: 140px;
 				height: 35px;
 				display: block;
-				font-size: 80%;
+				font-size: 85%;
 				line-height: 35px;
 				text-decoration: none;
 				text-align: center;
@@ -104,7 +105,6 @@
 				transition: .4s ease-in;
 				&:hover {
 					transform: scale(1.1);
-					font-size: 85%;
 					transition: .4s ease-out;
 				}
 			}
@@ -114,17 +114,13 @@
 			.article-info-item {
 				width: 50%;
 				float: left;
-				font-size: 85%;
+				font-size: 90%;
 				padding: 20px 15px;
 				text-align: center;
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 				box-sizing: border-box;
 				border-bottom: 1px solid $gray4;
-				cursor: pointer;
-				&:hover {
-					color: $brightColor;
-				}
 				&:first-child {
 					border-right: 1px solid $gray4;
 				}
