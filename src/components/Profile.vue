@@ -9,7 +9,7 @@
 		</div>
 
 		<div id="article-info" class="article-info clearfix">
-			<div class="article-info-item"><i class="fa fa-article"></i> {{blogSum}}</div>
+			<div class="article-info-item"><i class="fa  fa-file-text-o fa-article"></i> {{blogSum}}</div>
 			<div class="article-info-item"><i class="fa fa-tags"></i> {{tagSum}}</div>
 		</div>
 
@@ -147,6 +147,15 @@
 					color: $brightColor;
 				}
 			}
+            .fa-github{
+               color: $darkNavColor;
+            }
+            .fa-envelope{
+                color: $brightColor;
+            }
+            .fa-weixin{
+                color: #00cc66;
+            }
 			.qrcode {
 				position: absolute;
 				bottom: 0;

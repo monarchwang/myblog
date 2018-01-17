@@ -17,7 +17,7 @@
                             v-for="tag in synopsis.tags">{{tag}}</a></label>
 
                     <label class="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;{{synopsis.commentsNumber}}</label>
-                    <label class="thumbs"><i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;{{synopsis.agreeNumber}}</label>
+                    <label class="thumbs"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;{{synopsis.agreeNumber}}</label>
                     <label class="views"><i class="fa fa-eye"></i>&nbsp;&nbsp;{{synopsis.viewNumber}}</label>
                 </div>
             </div>

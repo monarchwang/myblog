@@ -21,7 +21,7 @@
                         </button>
                     </label>
                     <label class="thumbs" @click="praise()">
-                        <button class="btn-text"><i class="fa fa-thumbs-up" v-bind:class="{'thumb-up':thumbUp}"></i>赞一下&nbsp;&nbsp;{{blogData.agreeNumber}}
+                        <button class="btn-text"><i class="fa fa-thumbs-o-up" v-bind:class="{'thumb-up':thumbUp}"></i>赞一下&nbsp;&nbsp;{{blogData.agreeNumber}}
                         </button>
                     </label>
                 </div>
@@ -354,6 +354,6 @@
         transform: scale(1.2);
         color: $dangerColor;
         transition: all 0.3s ease-in-out;
-        background: url("../assets/img/thumb-up.png") no-repeat center;
+        /*background: url("../assets/img/thumb-up.png") no-repeat center;*/
     }
 </style>

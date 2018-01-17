@@ -169,7 +169,8 @@
                         a {
                             &:before {
                                 color: #ccc;
-                                content: "^";
+                                content: "\f0da";
+                                font-family: FontAwesome;
                                 font-size: 12px;
                                 margin-right: 6px;
                                 -webkit-transition: .2s ease;

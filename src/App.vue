@@ -340,7 +340,7 @@
         text-decoration: none;
     }
 
-    .fa {
+ /*   .fa {
         display: inline-block;
         width: 16px;
         height: 16px;
@@ -381,5 +381,5 @@
         background: url("./assets/img/weixin-icon.png") no-repeat center;
         width: 30px;
         height: 30px;
-    }
+    }*/
 </style>
