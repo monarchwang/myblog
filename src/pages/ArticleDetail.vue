@@ -223,6 +223,9 @@
                 editor.customConfig.menuFixed = false;
                 editor.customConfig.uploadImgServer = this.dataInterface.editorUpImgUrl;  // 图片上传地址
                 editor.customConfig.uploadImgFileName = 'file';  // 统一指定上传的文件name，需要指定。否则默认不同的上传方式是不同的name
+				editor.customConfig.uploadImgParams = {
+					version: "V3"  // 属性值会自动进行 encode ，此处无需 encode
+				};
                 editor.create();
                 this.editor = editor;
             }

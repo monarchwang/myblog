@@ -7,6 +7,8 @@ Vue.use(VueRouter);
 let router = new VueRouter({
 	routes: routers
 });
+Vue.prototype.$globalData = {};
+
 new Vue({
 	el: '#app',
 	router,
