@@ -16,7 +16,7 @@
                     <div class="article-meta">
                         <div class="article-date">
                             <i class="fa fa-calendar"></i>
-                            <a :href="articleBaseUrl+item.id">
+                            <a target="_blank" :href="articleBaseUrl+item.id">
                                 <time datetime="2017-01-12T09:42:14.000Z" itemprop="datePublished">{{item.createTime}}
                                 </time>
                             </a>

@@ -1,7 +1,6 @@
 <template>
 	<div>
 		Poetry
-		<profile></profile>
 	</div>
 </template>
 

@@ -35,12 +35,84 @@
             </div>
         </div>
 
+        <modal v-show="showSearchModal" :show="showSearchModal" @close="closeModal" borderRadius="0" padding="0 0"
+               :maskClosable="modal.maskClosable" width="600">
+            <span slot="header"></span>
+            <div slot="body" class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+                    <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+                </div>
+
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container">
+                        <section class="ins-section">
+                            <header class="ins-section-header">文章</header>
+                            <div class="ins-selectable ins-search-item" data-url="/2017/03/30/hello-axon.html">
+                                <header><i class="fa fa-file"></i>CQRS和Event Sourcing系列（三）： Hello,Axon3</header>
+                                <p class="ins-search-preview">
+                                    AxonFramework是一个轻量级的CQRS框架，支持EventSourcing，本系列将开始通过例子，StepByStep学习AxonFramework。
+                                    简介AxonFramework是一个基于事件驱动的轻量级CQRS框架，既支持直接持久化Aggreaget状态，也支持采用EventSour</p></div>
+                            <div class="ins-selectable ins-search-item" data-url="/2017/04/24/axon-spring-cloud.html">
+                                <header><i class="fa fa-file"></i>CQRS和Event Sourcing系列（九）：AxonFramework与SpringCloud的整合
+                                </header>
+                                <p class="ins-search-preview">
+                                    上一篇里，我们在利用Axon3的DistributeCommand的JGroup支持，和DistributedEvent对AMQP的支持，实现了分布式环境下的CQRS和EventSourcing。在这一篇中，我们将把Axon3与当下比较火热的微服务框架——SpringCloud进行整合，并将其微服务</p>
+                            </div>
+                            <div class="ins-selectable ins-search-item" data-url="/2017/03/31/axon-saga.html">
+                                <header><i class="fa fa-file"></i>CQRS和Event Sourcing系列（七）：Saga的使用</header>
+                                <p class="ins-search-preview">
+                                    在上一篇里面，我们正式的使用了CQRS模式完成了AXON的第一个真正的例子，但是细心的朋友会发现一个问题，创建订单时并没有检查商品库存。库存是否足够直接回导致订单状态的成功与否，在并发时可能还会出现超卖。当库存不足时还需要回滚订单，所以这里出现了复杂的跨Aggregate事务问题。Saga就是为解决</p>
+                            </div>
+                            <div class="ins-selectable ins-search-item" data-url="/2017/03/30/axon-cqrs-example.html">
+                                <header><i class="fa fa-file"></i>CQRS和Event Sourcing系列（六）： 第一个正式Axon例子</header>
+                                <p class="ins-search-preview">
+                                    前面对Axon的基本概念和基本操作做了简介，从本章开始，我们将一步步使用AxonFramework完成一个真正CQRS&amp;amp;EventSourcing的例子。
+                                    设计回顾一下使用AxonFramework应用的架构 Command端Repository和Query端的Database是解耦的，完全</p></div>
+                            <div class="ins-selectable ins-search-item" data-url="/2017/03/30/axon-event-sourcing.html">
+                                <header><i class="fa fa-file"></i>CQRS和Event Sourcing系列（五）：
+                                    Axon使用EventSourcing和AutoConfigure
+                                </header>
+                                <p class="ins-search-preview">继上一篇集成SpringBoot后，本篇将继续完成小目标： 使用EventSourcing
+                                    使用AutoConfigure配置Axon
+                                    前一篇中看到配置Axon即便在Spring中也是比较麻烦的，好在Axon提供了spring-boot-autoconfigure，提供了Spring下的一些默认配置</p>
+                            </div>
+                        </section>
+                        <section class="ins-section">
+                            <header class="ins-section-header">标签</header>
+                            <div class="ins-selectable ins-search-item"
+                                 data-url="http://edisonxu.org/tags/eventsourcing/">
+                                <header><i class="fa fa-tag"></i>eventsourcing<span
+                                        class="ins-slug">eventsourcing</span></header>
+                            </div>
+                            <div class="ins-selectable ins-search-item" data-url="http://edisonxu.org/tags/CQRS/">
+                                <header><i class="fa fa-tag"></i>CQRS<span class="ins-slug">CQRS</span></header>
+                            </div>
+                            <div class="ins-selectable ins-search-item" data-url="http://edisonxu.org/tags/axon/">
+                                <header><i class="fa fa-tag"></i>axon<span class="ins-slug">axon</span></header>
+                            </div>
+                            <div class="ins-selectable ins-search-item" data-url="http://edisonxu.org/tags/DDD/">
+                                <header><i class="fa fa-tag"></i>DDD<span class="ins-slug">DDD</span></header>
+                            </div>
+                            <div class="ins-selectable ins-search-item" data-url="http://edisonxu.org/tags/感悟/">
+                                <header><i class="fa fa-tag"></i>感悟<span class="ins-slug">感悟</span></header>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div slot="footer"></div>
+        </modal>
     </div>
 </template>
 
 <script>
+    import Modal from './components/Modal.vue'
+    import Api from './api/index'
+
     export default {
         name: 'app',
+        components: {Modal},
         data() {
             return {
                 msg: 'Welcome to Your Vue.js App',
@@ -66,7 +138,11 @@
                         router: '/readme',
                         isShow: false
                     },
-                ]
+                ],
+                showSearchModal: false,
+                modal: {
+                    maskClosable: true,
+                }
             }
         },
         mounted() {
@@ -75,7 +151,8 @@
                 if (href.indexOf(value.router) > 0) {
                     value.isShow = true;
                 }
-            })
+            });
+
         },
         methods: {
             goto(item) {
@@ -83,46 +160,110 @@
                     val.isShow = false;
                 });
                 item.isShow = true;
-                //TODO 切换路由
                 this.$router.push(item.router)
             },
             searchFocus() {
-                alert(123)
+                this.showSearchModal = true;
+            },
+            closeModal() {
+                this.showSearchModal = false;
+
             }
         }
     }
 </script>
-
 <style lang="scss">
     /*全局css*/
     @import './assets/css/global.scss';
+    .ins-search-container {
+        box-sizing: border-box;
+        color: #565a5f;
+        padding-top: 10px;
+        .ins-input-wrapper {
+            position: relative;
+            .ins-search-input {
+                outline: 0;
+                width: 100%;
+                border: none;
+                font-size: 14px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                font-weight: 200;
+                border-radius: 0;
+                background: #fff;
+                line-height: 20px;
+                box-sizing: border-box;
+                padding: 12px 28px 12px 20px;
+                border-bottom: 1px solid #e2e2e2;
+                font-family: "Microsoft Yahei Light", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+            }
+            .ins-close {
+                top: 50%;
+                right: 6px;
+                width: 20px;
+                height: 20px;
+                font-size: 16px;
+                margin-top: -11px;
+                position: absolute;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        .ins-section-wrapper {
+            overflow-y: auto;
+            position: relative;
+            .ins-section-container {
+                position: relative;
+                background: #f7f7f7;
+                .ins-section {
+                    font-size: 14px;
+                    line-height: 16px;
+                    .ins-section-header {
+                        color: #9a9a9a;
+                        border-bottom: 1px solid #e2e2e2;
+                    }
+                    .ins-search-item{
+                        padding: 8px 15px;
+                        &:hover{
+                            color: #fff;
+                            background: #006bde;
+                            .ins-search-preview{
+                                color: #fff;
+                            }
+                        }
+                        header{
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            .fa{
+                                margin-right: 8px;
+                            }
+                        }
+                        .ins-search-preview {
+                            height: 15px;
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin: 5px 0 0 20px;
+                        }
+                    }
+                    .ins-selectable{
+                        cursor: pointer;
+                    }
+                }
+                .ins-section .ins-search-item, .ins-section .ins-section-header {
+                    padding: 8px 15px;
+                }
+                .ins-section .ins-search-item .ins-search-preview, .ins-section .ins-search-item header {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
 
-    body {
-        color: #3f3f3f;
-        background: $gray1;
-        font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
-        /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
-        &::-webkit-scrollbar {
-            width: 5px;
-            height: 4px;
-            background-color: #f5f5f5;
         }
-        /*定义滚动条的轨道，内阴影及圆角*/
-        &::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px $gray6;
-            border-radius: 8px;
-            background-color: #f5f5f5;
-        }
-        /*定义滑块，内阴影及圆角*/
-        &::-webkit-scrollbar-thumb {
-            /*width: 10px;*/
-            height: 8px;
-            border-radius: 8px;
-            -webkit-box-shadow: inset 0 0 1px $brightColor;
-            background-color: $decorateColor;
-        }
+
     }
-
     .header {
         width: 100%;
         height: $headerHeight;
@@ -193,193 +334,4 @@
             }
         }
     }
-
-    .main-content {
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    .content {
-        padding: 30px 10px 20px 10px;
-    }
-
-    .footer {
-        border-top: 1px solid $gray6;
-        line-height: 1.6em;
-        font-size: .85em;
-        padding: 1rem;
-        .view-num {
-            color: #0097a7;
-            font-weight: 700;
-            font-size: 1.2em;
-            padding: 0 5px;
-        }
-        #footer-info {
-            margin: 0 auto;
-            text-align: center;
-        }
-        a {
-            color: #38b7ea;
-            text-decoration: none;
-        }
-    }
-
-    .clearfix {
-        *zoom: 1;
-        &:before, &:after {
-            display: table;
-            line-height: 0;
-            content: "";
-        }
-        &:after {
-            clear: both;
-        }
-    }
-
-    .division {
-        display: block;
-        margin-top: 20px;
-        border-bottom: 1px dashed #dfdfdf;
-    }
-
-    input {
-        height: 32px;
-        box-sizing: border-box;
-        line-height: 1.5;
-        padding: 4px 7px;
-        font-size: 12px;
-        border: 1px solid #d7dde4;
-        border-radius: 4px;
-        color: #657180;
-        background: #fff none;
-        cursor: text;
-        display: inline-block;
-        width: 100%;
-        transition: border .2s ease-in-out, background .2s ease-in-out, box-shadow .2s ease-in-out;
-        &:focus {
-            outline: 0;
-            box-shadow: 0 0 0 2px rgba(51, 153, 255, .2);
-            border-color: #5cadff;
-        }
-    }
-
-    button {
-        outline: 0;
-        display: inline-block;
-        margin-bottom: 0;
-        font-weight: 400;
-        vertical-align: middle;
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-        cursor: pointer;
-        border: 1px solid #d7dde4;
-        white-space: nowrap;
-        line-height: 1.5;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        padding: 6px 15px;
-        font-size: 12px;
-        border-radius: 4px;
-        transform: translateZ(0);
-        transition: color .2s linear, background-color .2s linear, border .2s linear;
-        color: #657180;
-        background: #f7f7f7 none;
-        text-align: center;
-    }
-
-    .btn-success {
-        color: #fff;
-        background-color: #0c6;
-        border-color: #0c6;
-        &:hover {
-            background-color: #33d685;
-            border-color: #33d685;
-        }
-        i {
-            word-spacing: 0.2rem;
-        }
-    }
-
-    .btn-info {
-        color: #fff;
-        background-color: #2db7f5;
-        border-color: #2db7f5;
-        &:hover {
-            background-color: #57c5f7;
-            border-color: #57c5f7;
-        }
-    }
-
-    .btn-text {
-        color: #657180;
-        background-color: transparent;
-        border-color: transparent;
-        &:hover {
-            color: #3091f2;
-            background-color: transparent;
-            border-color: transparent;
-        }
-    }
-
-    .mt-15 {
-        margin-top: 15px;
-    }
-
-    a {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-weight: inherit;
-        font-style: inherit;
-        font-family: inherit;
-        font-size: 100%;
-        vertical-align: baseline;
-        text-decoration: none;
-    }
-
- /*   .fa {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        margin-top: -5px;
-    }
-    .fa-eye{
-        background: url("./assets/img/view.png") no-repeat center;
-    }
-    .fa-calendar {
-        background: url("./assets/img/calendar.png") no-repeat center;
-    }
-
-    .fa-tags {
-        background: url("./assets/img/tags.png") no-repeat center;
-    }
-
-    .fa-comments {
-        background: url("./assets/img/comments.png") no-repeat center;
-    }
-
-    .fa-thumbs-up {
-        background: url("./assets/img/thumb.png") no-repeat center;
-    }
-    .fa-article{
-        background: url("./assets/img/article.png") no-repeat center;
-    }
-    .fa-github{
-        width: 30px;
-        height: 30px;
-        background: url("./assets/img/github.png") no-repeat center;
-    }
-    .fa-envelope{
-        background: url("./assets/img/envelope.png") no-repeat center;
-        width: 30px;
-        height: 30px;
-    }
-    .fa-weixin{
-        background: url("./assets/img/weixin-icon.png") no-repeat center;
-        width: 30px;
-        height: 30px;
-    }*/
 </style>

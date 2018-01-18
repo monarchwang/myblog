@@ -132,5 +132,8 @@ export default {
         let tag = tagName ? tagName : "";
         let url = `/tag/getAllTags?tagName=${tag}`;
         return axios.get(url, config());
+    },
+    getAllData(){
+        return axios.get('/blog/allDataBrief', config());
     }
 }
