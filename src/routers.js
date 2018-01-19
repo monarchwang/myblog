@@ -11,9 +11,9 @@ import Tags from './pages/Tags.vue'
 let routers = [
     {
         path: '/',
-        redirect: '/code'
+        redirect: '/blog'
     }, {
-        path: '/code',
+        path: '/blog',
         component: Code,
         children: [
             {path: '/', component: Synopses},
