@@ -7,7 +7,7 @@
             </keep-alive>
         </div>
         <div class="right-slide">
-            <right-slide :tagList="tags" @on-click-tag="clickTag"></right-slide>
+            <right-slide :tagList="tags" @on-click-tag="clickTag" :viewerSum="viewerSum"></right-slide>
         </div>
     </div>
 </template>
@@ -25,7 +25,8 @@
             return {
                 msg: 'Welcome to Your Vue.js App',
                 tags: [],
-                blogSum: 0
+                blogSum: 0,
+                viewerSum: 0
             }
         },
         methods: {
@@ -36,6 +37,7 @@
         },
         mounted() {
             Api.getAllTags("").then(res => {
+                this.viewerSum = res.viewerSum ? res.viewerSum : 0;
                 let arr = [];
                 this.blogSum = res.data.total;
                 res.data.rows.forEach(tag => {

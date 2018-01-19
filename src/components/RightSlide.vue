@@ -3,7 +3,7 @@
         <div class="slide-item">
             <h2 class="slide-item-title">公告</h2>
             <div class="slide-item-box">
-                <h3>您好，您是小站第 <strong>{{viewNum}}</strong> 位访客</h3>
+                <h3>您好，您是小站第 <strong>{{viewerSum}}</strong> 位访客</h3>
                 <ul>
                     <li v-for="notice in notices">
                         <span v-html="notice"></span>
@@ -12,7 +12,7 @@
                 <h3>欢迎分享交流经验！</h3>
             </div>
         </div>
-        <div class="slide-item">
+        <div class="slide-item" v-show="archiveList.length > 0">
             <h3 class="slide-item-title">归档</h3>
             <div class="widget">
                 <ul class="archive-list">
@@ -26,7 +26,8 @@
         <div class="slide-item">
             <h3 class="slide-item-title">标签</h3>
             <div class="widget tagcloud">
-                <span :style="{fontSize: tagFontSize[Math.floor(Math.random()*tagFontSize.length)]}" @click="clickTag(tag)"
+                <span :style="{fontSize: tagFontSize[Math.floor(Math.random()*tagFontSize.length)]}"
+                      @click="clickTag(tag)"
                       v-for="tag in tagList">
                     {{tag}}
                 </span>
@@ -51,16 +52,19 @@
             tagList: {
                 type: Array,
                 default: []
+            },
+            viewerSum: {
+                type: Number,
+                default: 0
             }
         },
         name: 'RightSlide',
         data() {
             return {
-                tagFontSize:['8px','14px','16px','20px'],
-                viewNum: 6666,
+                tagFontSize: ['8px', '14px', '16px', '20px'],
                 notices: ["Q Q: 1786374738", "微信: wangguoliang3152", "邮箱：wglliang@126.com", "源码：<a target='_blank' href='http://www.github.com/monarchwang/myblog' style='color: #1E9FFF; text-decoration: none'>传送门</a>"],
                 archiveList: [
-                    {
+                    /*{
                         url: "/archives/2017/04/",
                         date: "四月 2017",
                         number: 2
@@ -74,7 +78,7 @@
                         url: "/archives/2017/02/",
                         date: "二月 2017",
                         number: 6
-                    }
+                    }*/
                 ],
                 tagsNum: 0,
                 linkList: [

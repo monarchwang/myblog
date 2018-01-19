@@ -84,7 +84,7 @@
         data() {
             return {
                 msg: 'Welcome to Your Vue.js App',
-                viewNum: 1234,
+                viewNum: 0,
                 items: [
                     {
                         text: '要填的坑',
@@ -173,6 +173,7 @@
             },
             getSummary() {
                 Api.getSummary().then(res => {
+                    this.viewNum = res.viewerSum ? res.viewerSum : 0;
                     if (res.data) {
                         this.$globalData.dataSummary = deepCopy(res.data);
                         this.dataSummary.articleDtos = res.data.articleDtos.splice(0, 5);
