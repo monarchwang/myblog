@@ -13,7 +13,7 @@
                 <div class="synopsis-footer">
                     <label class="date"><i
                             class="fa fa-calendar"></i>&nbsp;&nbsp;<span>{{synopsis.createTime}}</span></label>
-                    <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<a :href="'#/code/tags/' + tag"
+                    <label class="tags"><i class="fa fa-tags"></i>&nbsp;&nbsp;<a :href="'#/blog/tags/' + tag"
                             v-for="tag in synopsis.tags">{{tag}}</a></label>
 
                     <label class="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;{{synopsis.commentsNumber}}</label>
@@ -61,8 +61,8 @@
                 this.queryBlogList();
             },
             toArticleDetail(articleId) {
-                // this.$router.push(`/code/article/${articleId}`);
-                window.open(`/#/code/article/${articleId}`)
+                // this.$router.push(`/blog/detail/${articleId}`);
+                window.open(`/#/blog/detail/${articleId}`)
             },
             queryBlogList() {
                 Api.queryBlogList(this.currentPage, this.pageSize).then(response => {

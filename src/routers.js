@@ -17,7 +17,7 @@ let routers = [
         component: Code,
         children: [
             {path: '/', component: Synopses},
-            {path: 'article/:id', component: ArticleDetail},
+            {path: 'detail/:id', component: ArticleDetail},
             {path: 'tags/:tag', component: Tags}
         ]
     }, {

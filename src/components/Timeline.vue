@@ -52,11 +52,11 @@
             },
             baseUrl: {
                 type: String,
-                default: '#/code/tags/',
+                default: '#/blog/tags/',
             },
             articleBaseUrl: {
                 type: String,
-                default: '#/code/article/',
+                default: '#/blog/detail/',
             }
         },
         data() {

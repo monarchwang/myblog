@@ -164,11 +164,11 @@
                 this.showSearchModal = false;
             },
             gotToArticleDetail(articleId) {
-                window.open(`/#/code/article/${articleId}`)
+                window.open(`/#/blog/detail/${articleId}`)
             },
             goToTagPage(tag) {
                 this.showSearchModal = false;
-                this.$router.push(`/code/tags/${tag}`);
+                this.$router.push(`/blog/tags/${tag}`);
                 Api.Bus.$emit('on-click-tag', tag);
             },
             getSummary() {

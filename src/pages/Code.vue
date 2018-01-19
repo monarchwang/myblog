@@ -30,7 +30,7 @@
         },
         methods: {
             clickTag(tag) {
-                this.$router.push({path: `/code/tags/${tag}`});
+                this.$router.push({path: `/blog/tags/${tag}`});
                 Api.Bus.$emit('on-click-tag', tag);
             }
         },
