@@ -87,8 +87,8 @@
                 viewNum: 0,
                 items: [
                     {
-                        text: '要填的坑',
-                        router: '/code',
+                        text: '博客',
+                        router: '/blog',
                         isShow: false
                     },
                     {
