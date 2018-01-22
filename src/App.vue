@@ -41,7 +41,7 @@
             <div slot="body" class="ins-search-container">
                 <div class="ins-input-wrapper">
                     <input type="text" class="ins-search-input" v-model="keywords" placeholder="想要查找什么...">
-                    <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+                    <span class="ins-close ins-selectable" @click.stop.prevent="closeModal()"><i class="fa fa-times-circle"></i></span>
                 </div>
 
                 <div class="ins-section-wrapper">
